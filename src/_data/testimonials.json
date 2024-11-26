@@ -1,0 +1,28 @@
+[
+    {
+        "stars" : 5,
+        "message" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel ullamcorper mattis senectus tincidunt feugiat? Netus elementum phasellus dictumst ",
+        "person" : "Bobby Sen"
+    },
+    {
+        "stars" : 4,
+        "message" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel ullamcorper mattis senectus tincidunt feugiat? Netus elementum.",
+        "person" : "Sandy H."
+    },
+    {
+        "stars" : 5,
+        "message" : "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+        "person" : "JK"
+    },
+    {
+        "stars" : 4.5,
+        "message" : "Lorem ipsum odor amet, consectetuer adipiscing elit.",
+        "person" : "JK"
+    },
+    {
+        "stars" : 3,
+        "message" : "Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel  Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel ullamcorper mattis senectus tincidunt feugiat? Netus elementum",
+        "person" : "Sandy H."
+    }
+    
+]

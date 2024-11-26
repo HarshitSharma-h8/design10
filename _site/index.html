@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaZap | Home</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./javascript/index.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper crousel  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <header id="navbar" class="sticky w-full z-50 top-0 transition-all duration-500 ease-in-out">
+        <!-- Main Navbar -->
+        <nav class="z-50 bg-white shadow-sm  relative mycontainer">
+            <div class="mx-auto  py-4 flex justify-between items-center ">
+                <!-- hamburger menue -->
+                <a
+                    class="lg:hidden bg-[var(--primaryColor)] text-[var(--colorWhite)] px-3 py-1 rounded-md cursor-pointer menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <div class="flex gap-8">
+                    <!-- Logo and company name -->
+                    <a href="./index.html" class="order-last lg:order-none flex items-center space-x-2">
+                        <div class="flex flex-col">
+                            <span class="text-[var(--primaryColor)] font-bold lg:text-3xl text-[1.3rem]">Aqua<span
+                                    class="text-[var(--darkBlue)]">Zap.</span></span>
+
+                        </div>
+                    </a>
+                    <!-- Navigation links -->
+                    <div class="hidden lg:flex  text-[var(--colorDark)] font-medium">
+                        <a href="./index.html"
+                            class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
+                        <a href="./pages/about/index.html"
+                            class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
+                        <li class="relative group ">
+                            <button href="#"
+                                class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Services
+                                <i
+                                    class="fa-solid fa-chevron-down text-[var(--primaryColor)] text-[1rem] "></i></button>
+                            <!-- Dropdown Menu -->
+                            <ul
+                                class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
+                                <li><a href="./pages/allservice/index.html"
+                                        class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                        Services</a>
+                                </li>
+                                <li><a href="./pages/basementservice/index.html"
+                                        class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Basement
+                                        Plumbing servise</a>
+                                </li>
+                                <li><a href="./pages/bathroomservice/index.html"
+                                        class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Bathroom
+                                        Plumbing</a></li>
+
+                                <li><a href="./pages/remodelingservice/index.html"
+                                        class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Remodeling
+                                        Service</a></li>
+                                <li><a href="./pages/gaslineservice/index.html"
+                                        class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Gas
+                                        Line Services</a></li>
+                                <li><a href="./pages/kitchenservice/index.html"
+                                        class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Kitchen
+                                        Plumbing</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <button onclick="window.location.href='../servicearea/index.html';"
+                                class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Service
+                                Areas <i class="fa-solid fa-chevron-down text-[var(--primaryColor)] text-[1rem] "></i>
+                            </button>
+                            <!-- Dropdown Menu -->
+                            <ul
+                                class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
+                                <li><a href="./pages/Dublin/index.html"
+                                        class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Dublin</a>
+                                </li>
+                                <li><a href="./pages/Clintonville/index.html"
+                                        class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Clintonville</a>
+                                </li>
+                                <li><a href="./pages/Downtown/index.html"
+                                        class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Downtown</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <a href="./pages/projects/index.html"
+                            class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
+                        <!-- <a href="#"
+                        class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
+                        <a href="./pages/blog/index.html"
+                            class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blog</a>
+                        <a href="./pages/contact/index.html"
+                            class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
+                    </div>
+                </div>
+                <!-- Get Free Quote Button -->
+                <div class="mt-3 md:mt-0  flex items-center gap-2">
+                    <a href="tel:8669376739"
+                        class="hidden xl:block hover:text-[var(--greenHover)] transition duration-300 ease-in-out text-[1.1rem]  text-[var(--green)] "><i
+                            class="fa-solid fa-mobile-screen-button"></i> <span class="">866-937-6739</span></a>
+                    <a href="./pages/contact/index.html#contactus"
+                        class="hidden xl:block bg-[var(--green)] text-[var(--colorWhite)] py-2 px-4 rounded-md hover:bg-[var(--greenHover)] transition duration-300 ease-in-out text-[1.1rem] uppercase">Schedule
+                        Service</a>
+                    <a href="tel:8669376739" title="Call Us" class="xl:hidden block">
+                        <i
+                            class="fa-solid fa-mobile-screen-button text-[var(--green)] hover:text-[var(--greenHover)]  text-2xl"></i>
+                    </a>
+                    <a href="./pages/contact/index.html#contactus" title="Schedule Service"
+                        class="text-[var(--green)] hover:text-[var(--greenHover)] xl:hidden block text-2xl">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <!-- mobile menu -->
+            <div class="z-10  bg-[var(--primaryColor)]  lg:hidden absolute left-0 top-0 transition-all duration-300 ease-in-out transform -translate-x-[400%] w-[60%] h-screen px-4 md:px-10 py-5"
+                id="mobileMenu">
+                <div class=" text-[var(--colorDark)] font-medium flex flex-col gap-2">
+                    <!-- hamburger menue -->
+                    <div class="flex justify-between">
+                        <div></div>
+                        <a
+                            class="lg:hidden bg-[var(--colorWhite)] text-[var(--primaryColor)] px-3 py-1 rounded-md cursor-pointer menuToggle group">
+                            <i class="fa-solid fa-xmark transition group-hover:rotate-90"></i>
+                        </a>
+                    </div>
+                    <a href="./index.html"
+                        class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
+                    <a href="./pages/about/index.html"
+                        class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
+                    <a href="#" <li class="relative">
+                        <a href="#"
+                            class="flex items-center justify-between w-full hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold]"
+                            onclick="toggleDropdown()">Services <i
+                                class="fa-solid fa-chevron-down transform transition duration-200 ease-in-out text-[var(--green)]"
+                                id="dropMenu"></i></a>
+                        <!-- Dropdown Menu (Hidden by default) -->
+                        <ul id="mobileDropdown" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
+                            <li><a href="./pages/allservice/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                    Services</a>
+                            </li>
+                            <li><a href="./pages/basementservice/index.html"
+                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Basement
+                                    Plumbing</a>
+                            </li>
+                            <li><a href="./pages/bathroomservice/index.html"
+                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Bathroom
+                                    Plumbing</a></li>
+                            <li><a href="./pages/remodelingservice/index.html"
+                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Remodeling
+                                    Service</a></li>
+                            <li><a href="./pages/gaslineservice/index.html"
+                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Gas
+                                    Line Services</a></li>
+                            <li><a href="./pages/kitchenservice/index.html"
+                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Kitchen
+                                    Plumbing</a></li>
+
+                        </ul>
+                        </li>
+                        <li class="relative">
+                            <a href="#"
+                                class="flex items-center justify-between w-full hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold]"
+                                onclick="toggleDropdown2()">Service Areas<i
+                                    class="fa-solid fa-chevron-down transform transition duration-200 ease-in-out text-[var(--green)]"
+                                    id="dropMenu2"></i></a>
+                            <!-- Dropdown Menu (Hidden by default) -->
+                            <ul id="mobileDropdown2" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
+                                <li><a href="./pages/allservice/index.html"
+                                        class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                        Service Areas</a>
+                                </li>
+                                <li><a href="./pages/Dublin/index.html"
+                                        class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Dublin,
+                                        Columbus</a>
+                                </li>
+                                <li><a href="./pages/Clintonville/index.html"
+                                        class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Clintonville,
+                                        Columbus</a>
+                                </li>
+                                <li><a href="./pages/Downtown/index.html"
+                                        class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Downtown,
+                                        Columbus</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <a href="./pages/projects/index.html"
+                            class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
+                        <!-- <a href="#"
+                            class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
+                        <a href="./pages/blog/index.html"
+                            class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blog</a>
+                        <a href="./pages/contact/index.html"
+                            class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
+                        <div class="  space-y-3">
+                            <a href="./pages/contact/index.html#contactus"
+                                class=" block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Schedule
+                                Service
+                            </a>
+                            <a href="tel:8669376739"
+                                class=" block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Call
+                                Now!
+                            </a>
+                        </div>
+                </div>
+
+            </div>
+        </nav>
+  </header> 
+  <main>
+    
+    <!-- herosection -Home -->
+    <section class="bg-[var(--primaryColor)] md:h-[80vh] md:flex  items-center">
+        <div class="md:w-[50%] h-full ">
+            <img src="./assets/homehero.jpg" alt="homepage" class=" w-full h-[100%] object-cover md:rounded-l-[250px]">
+        </div>
+        <div class="md:hidden block bg-[var(--colorWhite)] flex items-center">
+            <a href="tel:8669376739"
+                class="w-[50%] bg-[var(--darkBlue)] hover:text-[var(--darkBlue)] hover:bg-[var(--colorWhite)] transition duration-300 ease-in-out text-[1.1rem]  text-[var(--colorWhite)] py-2 px-3 border-2 border-[var(--darkBlue)] text-center">
+                <i class="fa-solid fa-mobile-screen-button ">
+                </i> 866-937-6739
+            </a>
+            <a href="./pages/contact/index.html#contactus"
+                class="w-[50%] bg-[var(--green)] text-[var(--colorWhite)] py-2 px-3 border-2 border-[var(--green)] hover:bg-[var(--colorWhite)] hover:text-[var(--green)] transition duration-300 ease-in-out text-[1.1rem] text-center"><i
+                    class="fa-solid fa-calendar-days"></i> Schedule
+                Service</a>
+        </div>
+        <div class="md:w-[50%] md:pl-[5rem] pl-[1rem] paddingY pr-[5rem] order-first">
+            <h1 class="text-5xl text-[var(--colorWhite)] font-bold">Plumbing & Repair</h1>
+            <p class="text-[var(--colorWhite)] mt-4 mb-8 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Inventore fugit adipisci, quis sint quibusdam
+                iusto doloribus et officia ipsam quos cupiditate perferendis. Provident voluptates veritatis cupiditate
+                tempora, perspiciatis unde esse.
+            </p>
+            <a href="./pages/contact/index.html#contactus"
+                class=" bg-[var(--darkBlue)] text-[var(--colorWhite)] hover:bg-[var(--colorWhite)] hover:text-[var(--darkBlue)] font-medium py-3 px-8 rounded-full  transition duration-300 ease-in-out text-[1.1rem] uppercase ">Schedule
+                Service
+            </a>
+        </div>
+    </section>
+
+    <!-- Servise Tstimonial -->
+    <section class=" mx-auto   bg-[var(--colorWhite)]  mycontainer paddingY">
+        <div class="mb-10">
+            <h2 class="text-center text-4xl mb-3 text-[var(--darkBlue)] font-bold">Best Services We Offer</h2>
+            <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
+            </p>
+        </div>
+
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
+                        <div class="overflow-hidden  w-full h-[16rem]">
+                            <img src="./assets/homehero.jpg"
+                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <a href="./pages/bathroomservice/index.html" class="p-4 flex items-center justify-between">
+                            <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Bathroom Plumbing</h4>
+                            <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
+                        </a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
+                        <div class="overflow-hidden  w-full h-[16rem]">
+                            <img src="./assets/homehero.jpg"
+                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <a href="./pages/basementservice/index.html" class="p-4 flex items-center justify-between">
+                            <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Basement Plumbing</h4>
+                            <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
+                        </a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
+                        <div class="overflow-hidden  w-full h-[16rem]">
+                            <img src="./assets/homehero.jpg"
+                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <a href="./pages/gaslineservice/index.html" class="p-4 flex items-center justify-between">
+                            <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Gas Line Service</h4>
+                            <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
+                        </a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
+                        <div class="overflow-hidden  w-full h-[16rem]">
+                            <img src="./assets/homehero.jpg"
+                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <a href="./pages/remodelingservice/index.html" class="p-4 flex items-center justify-between">
+                            <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Remodeling Service</h4>
+                            <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
+                        </a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
+                        <div class="overflow-hidden  w-full h-[16rem]">
+                            <img src="./assets/homehero.jpg"
+                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <a href="./pages/bathroomservice/index.html" class="p-4 flex items-center justify-between">
+                            <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Bathroom Plumbing</h4>
+                            <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
+                        </a>
+                    </div>
+                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
+                        <div class="overflow-hidden  w-full h-[16rem]">
+                            <img src="./assets/homehero.jpg"
+                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
+                                alt="kitchen plumbing">
+                        </div>
+                        <a href="./pages/kitchenservice/index.html" class="p-4 flex items-center justify-between">
+                            <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Kitchen Plumbing</h4>
+                            <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -->
+    <section class="mycontainer paddingY bg-[var(--bgCream)]">
+        <!-- Main wrapper for the cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="text-blue-500 mb-4 flex justify-center items-center">
+                    <!-- Example icon (replace with actual SVG or image) -->
+                    <img src="./assets/handshake.png" alt="handshake" class="w-20">
+                </div>
+                <h3 class="text-xl font-semibold text-[var(--darkBlue)] font-semibold mb-2 ">Gotta Love It Guarantee®
+                </h3>
+                <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis sunt sit a assumenda
+                    delectus pariatur illo commodi eius fuga!
+                </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="text-blue-500 mb-4 flex justify-center items-center">
+                    <!-- Example icon (replace with actual SVG or image) -->
+                    <img src="./assets/fan.png" alt="fan" class="w-20">
+                </div>
+                <h3 class="text-xl font-semibold text-[var(--darkBlue)] font-semibold mb-2 ">Faster Dry Times</h3>
+                <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laborum nostrum laboriosam
+                    adipisci non nihil.
+                </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                <div class="text-blue-500 mb-4 flex justify-center items-center">
+                    <!-- Example icon (replace with actual SVG or image) -->
+                    <img src="./assets/stars.png" alt="starts" class="w-20">
+                </div>
+                <h3 class="text-xl font-semibold text-[var(--darkBlue)] font-semibold mb-2 ">Residue Free® Clean</h3>
+                <p class="text-gray-600">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, provident. Saepe quasi dolore
+                    expedita, cupiditate nam, facilis laboriosam tempora quas nulla corrupti eveniet repellat ea magni,
+                    dolorem tenetur quae fugit?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+    <section class="mycontainer paddingY">
+        <div class=" grid grid-cols-1 lg:grid-cols-2  gap-8">
+            <!-- Image Section -->
+            <div class="">
+                <img src="./assets/carpetClean.webp" alt="Professional cleaning"
+                    class="rounded-lg shadow-md h-full object-cover" />
+            </div>
+            <!-- Text Section -->
+            <div class=" flex flex-col justify-center">
+                <h4 class="text-2xl md:text-3xl font-bold text-[var(--darkBlue)] mb-4">
+                    Experts in the Science of Clean™
+                </h4>
+                <h2 class="text-lg font-semibold text-gray-700 mb-2">
+                    People and technology you can trust.
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, nobis. Nesciunt itaque
+                    nihil, asperiores est nulla quas consectetur quaerat aliquam. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Quae, blanditiis accusantium. Numquam aspernatur quaerat laudantium!
+                </p>
+                <p class="text-gray-600 mb-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quas, doloribus pariatur sequi
+                    praesentium officiis incidunt accusantium quibusdam facere ducimus!
+                </p>
+                <ul class="list-disc list-inside text-gray-600 mb-6 carpetClean">
+                    <li><span class="text-[var(--primaryColor)] font-bold">&#x2713;</span> Safe for People, Pets, and
+                        the Planet</li>
+                    <li><span class="text-[var(--primaryColor)] font-bold">&#x2713;</span> Patented Zerorez Technology
+                    </li>
+                    <li><span class="text-[var(--primaryColor)] font-bold">&#x2713;</span> Platinum Certification by the
+                        Carpet and Rug Institute</li>
+                </ul>
+                <a href="./pages/contact/index.html#contactus"
+                    class="bg-[var(--green)] text-[var(--colorWhite)] py-2 px-4 rounded-md hover:bg-[var(--greenHover)] transition duration-300 ease-in-out text-[1.1rem] uppercase w-fit">Schedule
+                    Service
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="mycontainer paddingY bg-[var(--bgCream)]">
+        <div class="mb-10">
+            <h2 class="text-center text-4xl mb-3 text-[var(--darkBlue)] font-bold">Client Voices</h2>
+            <p class="hidden sm:block text-center  text-[var(--colorDark)]">Our customers would refer AquaZap to a friend. Experience The AquaZap Difference for yourself!
+            </p>
+        </div>
+
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    
+                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden h-[20rem] p-8">
+                        <div class="flex flex-col justify-between h-full">
+                           <div class="stars">
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                               <blockquote>
+                                    <p class="text-[var(--colorWhite)]">"Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel ullamcorper mattis senectus tincidunt feugiat? Netus elementum phasellus dictumst "</p>
+                               </blockquote>
+                            </div>
+                            
+                            <p class="text-[var(--colorWhite)]">~Bobby Sen</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden h-[20rem] p-8">
+                        <div class="flex flex-col justify-between h-full">
+                           <div class="stars">
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                    
+                               
+                               <blockquote>
+                                    <p class="text-[var(--colorWhite)]">"Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel ullamcorper mattis senectus tincidunt feugiat? Netus elementum."</p>
+                               </blockquote>
+                            </div>
+                            
+                            <p class="text-[var(--colorWhite)]">~Sandy H.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden h-[20rem] p-8">
+                        <div class="flex flex-col justify-between h-full">
+                           <div class="stars">
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                               <blockquote>
+                                    <p class="text-[var(--colorWhite)]">"Lorem ipsum odor amet, consectetuer adipiscing elit."</p>
+                               </blockquote>
+                            </div>
+                            
+                            <p class="text-[var(--colorWhite)]">~JK</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden h-[20rem] p-8">
+                        <div class="flex flex-col justify-between h-full">
+                           <div class="stars">
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                    
+                               
+                               <blockquote>
+                                    <p class="text-[var(--colorWhite)]">"Lorem ipsum odor amet, consectetuer adipiscing elit."</p>
+                               </blockquote>
+                            </div>
+                            
+                            <p class="text-[var(--colorWhite)]">~JK</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden h-[20rem] p-8">
+                        <div class="flex flex-col justify-between h-full">
+                           <div class="stars">
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                     
+                                        <span class="text-[var(--gold)] text-lg">&#9733;</span>
+                                    
+                               
+                                    
+                               
+                                    
+                               
+                               <blockquote>
+                                    <p class="text-[var(--colorWhite)]">"Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel  Lorem ipsum odor amet, consectetuer adipiscing elit. Penatibus vel ullamcorper mattis senectus tincidunt feugiat? Netus elementum"</p>
+                               </blockquote>
+                            </div>
+                            
+                            <p class="text-[var(--colorWhite)]">~Sandy H.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+
+  </main>
+  <footer class="bg-[var(--darkBlue)]">
+        <div class="mycontainer  flex items-center justify-between w-full py-4">
+            <a href="./pages/contact/index.html#contactus"
+                class=" block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Schedule
+                Service
+            </a>
+            <!-- Social Media Icons -->
+            <div class="flex mt-4 space-x-3">
+                <a href="https://www.facebook.com/" target="_blank"
+                    class="text-[var(--green)] hover:text-[var(--colorWhite)] hover:scale-105 transition duration-300 text-xl ease-in-out"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/" target="_blank"
+                    class="text-[var(--green)] hover:text-[var(--colorWhite)] hover:scale-105 transition duration-300 text-xl ease-in-out"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"
+                    class="text-[var(--green)] hover:text-[var(--colorWhite)] hover:scale-105 transition duration-300 text-xl ease-in-out"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://in.pinterest.com/" target="_blank"
+                    class="text-[var(--green)] hover:text-[var(--colorWhite)] hover:scale-105 transition duration-300 text-xl ease-in-out"><i
+                        class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <hr class="mycontainer">
+        <div class=" grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 paddingY mycontainer ">
+            <!-- Logo and Description -->
+            <div>
+                <a href="./index.html" class="order-last lg:order-none flex items-center space-x-2">
+                    <div class="flex flex-col">
+                        <span class="text-[var(--primaryColor)] font-bold text-3xl ">Aqua<span
+                                class="text-[var(--colorWhite)]">Zap.</span></span>
+                        <span class="text-[var(--colorWhite)] text-sm  font-semibold">Best Plumber Service</span>
+                    </div>
+                </a>
+                <p class="mt-4 max-w-xs text-[var(--colorWhite)]">
+                    Management Plumbing includes a broad range of activities, and the many firms and their members often
+                    define these practices.
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Quick Link</h5>
+                <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
+                    <li><a href="./pages/about/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> About Us</a></li>
+                    <li><a href="./pages/projects/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Projects</a></li>
+                    <!-- <li><a href="#" class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Services</a></li> -->
+                    <li><a href="./pages/contact/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Contact</a></li>
+                    <li><a href="./pages/blog/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Our Blog</a>
+                    </li>
+                    <li><a href="./pages/Dublin/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Dublin, Columbus</a>
+                    </li>
+                    <li><a href="./pages/Clintonville/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Clintonville, Columbus</a>
+                    </li>
+                    <li><a href="./pages/Downtown/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Downtown, Columbus</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick contacts -->
+            <div>
+                <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Quick Contact</h5>
+                <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
+                    <li><a href="#" class=" transition duration-300 ease-in-out flex items-center gap-4"><i
+                                class="fa-solid fa-location-dot text-[var(--colorWhite)]"></i> Columbus, Ohio, USA</a>
+                    </li>
+                    <li><a href="#" class=" transition duration-300 ease-in-out flex items-center gap-4"><i
+                                class="fa-solid fa-phone text-[var(--colorWhite)]"></i> +000 123 456 789</a></li>
+                    <li><a href="#" class=" transition duration-300 ease-in-out flex items-center gap-4"><i
+                                class="fa-solid fa-envelope text-[var(--colorWhite)]"></i> plumblab@gmail.com</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Our Services -->
+            <div>
+                <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Our Services</h5>
+                <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
+                    <li><a href="./pages/remodelingservice/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Remodeling Service</a></li>
+                    <li><a href="./pages/basementservice/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Basement Plumbing</a></li>
+                    <li><a href="./pages/bathroomservice/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Bathroom Plumbing</a></li>
+                    <li><a href="./pages/gaslineservice/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Gas Line Services</a></li>
+                    <li><a href="./pages/kitchenservice/index.html"
+                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
+                                class="fa-solid fa-angles-right"></i> Kitchen Plumbing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-[var(--colorDark2)] text-[var(--colorWhite)] text-center p-2 sm:p-4 lg:text-base px-4 md:px-10">
+            <p>&#169; Copyright <span id="year"></span> | AquaZap. - Plumber Website Theme | All right reserved. | <a
+                    href="./pages/privacypolicy/index.html" class="underline">Privacy Policy</a></p>
+        </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
