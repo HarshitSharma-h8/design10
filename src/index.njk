@@ -1,38 +1,38 @@
 ---
 layout : 'base.njk'
 title : AquaZap | Home
+
+heroImgSrc : "/assets/homehero.jpg"
+heroImgAlt : "HomePageHeroImg"
+heroTitle : "Plumbing & Repair"
+heroContent : "Lorem ipsum dolor sit amet. Est amet eaque cum suscipit inventore ea quisquam voluptate id tempore pariatur aut eveniet recusandae et quae tempora aut debitis enim. Non quos debitis non similique libero aut aliquam illo sed ipsum odit aut harum minus qui rerum corrupti."
+
+accordination_title_1 : "Est iure fugiat sed iure nemo."
+accordination_content_1 : "Lorem ipsum dolor sit amet. Id maiores soluta non doloremque quidem hic aliquid suscipit rem nobis praesentium cum molestiae saepe. Ad nemo saepe rem dolor tenetur a beatae iusto aut earum quos est consequatur dolore."
+accordination_title_2 : "Quo quibusdam ratione ut quisquam amet ut maiores molestiae!"
+accordination_content_2 : "Ea consequatur necessitatibus 33 iure deserunt et impedit voluptate. Hic soluta quae ut perspiciatis quas aut obcaecati dolorum sed ipsum perferendis est illum sint ut excepturi dolorum. Sit rerum similique sed internos commodi 33 sunt dolorum? Et voluptatem ipsum eos quia aperiam in cupiditate atque vel distinctio eius ut voluptatem labore."
+accordination_title_3 : "Sit perspiciatis voluptatem sit nemo"
+accordination_content_3 : "Nam eveniet enim ut tempore adipisci eos voluptas aliquam et ipsam illo aut dolor ipsa rem asperiores dolorem sit autem sint. Ad inventore enim qui laboriosam quia nam deserunt consequatur qui unde error non quibusdam illo. Et labore repellendus et nemo ipsum et inventore magnam. Ut eligendi temporibus est quos odit ut cumque galisum est libero reprehenderit et saepe voluptas ut doloribus earum aut nesciunt consequatur."
+accordination_title_4 : "Ex tenetur earum sed officiis aliquam!"
+accordination_content_4 : "Lorem ipsum dolor sit amet. Et eveniet perspiciatis ut explicabo soluta et debitis earum ea assumenda libero ut rerum quia qui ducimus pariatur. Sit magni eaque non nulla eius est dolores enim eum quam dolorem qui corporis omnis. Qui veritatis odio qui quas earum rem expedita accusantium sit saepe iste."
+accordination_title_5 : "Sit maiores enim et ipsum quia."
+accordination_content_5 : "Ea consequatur necessitatibus 33 iure deserunt et impedit voluptate. Hic soluta quae ut perspiciatis quas aut obcaecati dolorum sed ipsum perferendis est illum sint ut excepturi dolorum. Sit rerum similique sed internos commodi 33 sunt dolorum? Et voluptatem ipsum eos quia aperiam in cupiditate atque vel distinctio eius ut voluptatem labore."
+
+
+
+
+describe_section1_img : "/assets/carpetClean.webp"
+describe_section1_alt : "Professional cleaning"
+describe_section1_title1 : "Experts in the Science of Clean™"
+describe_section1_title2 : "People and technology you can trust."
+describe_section1_para1 : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, nobis. Nesciunt itaque nihil, asperiores est nulla quas consectetur quaerat aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, blanditiis accusantium. Numquam aspernatur quaerat laudantium!"
+describe_section1_para2 : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quas, doloribus pariatur sequi praesentium officiis incidunt accusantium quibusdam facere ducimus!"
+describe_section1_point1 : "Safe for People, Pets, and the Planet"
+describe_section1_point2 : "Patented Zerorez Technology"
+describe_section1_point3 : "Platinum Certification by the Carpet and Rug Institute"
 ---
 
-    <!-- herosection -Home -->
-    <section class="bg-[var(--primaryColor)] md:h-[80vh] md:flex  items-center">
-        <div class="md:w-[50%] h-full ">
-            <img src="./assets/homehero.jpg" alt="homepage" class=" w-full h-[100%] object-cover md:rounded-l-[250px]">
-        </div>
-        <div class="md:hidden block bg-[var(--colorWhite)] flex items-center">
-            <a href="tel:8669376739"
-                class="w-[50%] bg-[var(--darkBlue)] hover:text-[var(--darkBlue)] hover:bg-[var(--colorWhite)] transition duration-300 ease-in-out text-[1.1rem]  text-[var(--colorWhite)] py-2 px-3 border-2 border-[var(--darkBlue)] text-center">
-                <i class="fa-solid fa-mobile-screen-button ">
-                </i> 866-937-6739
-            </a>
-            <a href="./pages/contact/index.html#contactus"
-                class="w-[50%] bg-[var(--green)] text-[var(--colorWhite)] py-2 px-3 border-2 border-[var(--green)] hover:bg-[var(--colorWhite)] hover:text-[var(--green)] transition duration-300 ease-in-out text-[1.1rem] text-center"><i
-                    class="fa-solid fa-calendar-days"></i> Schedule
-                Service</a>
-        </div>
-        <div class="md:w-[50%] md:pl-[5rem] pl-[1rem] paddingY pr-[5rem] order-first">
-            <h1 class="text-5xl text-[var(--colorWhite)] font-bold">Plumbing & Repair</h1>
-            <p class="text-[var(--colorWhite)] mt-4 mb-8 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit.
-                Inventore fugit adipisci, quis sint quibusdam
-                iusto doloribus et officia ipsam quos cupiditate perferendis. Provident voluptates veritatis cupiditate
-                tempora, perspiciatis unde esse.
-            </p>
-            <a href="./pages/contact/index.html#contactus"
-                class=" bg-[var(--darkBlue)] text-[var(--colorWhite)] hover:bg-[var(--colorWhite)] hover:text-[var(--darkBlue)] font-medium py-3 px-8 rounded-full  transition duration-300 ease-in-out text-[1.1rem] uppercase ">Schedule
-                Service
-            </a>
-        </div>
-    </section>
+    {% include "heroSection.njk" %}
 
     <!-- Servise Tstimonial -->
     <section class=" mx-auto   bg-[var(--colorWhite)]  mycontainer paddingY">
@@ -48,7 +48,7 @@ title : AquaZap | Home
                 <div class="card-list swiper-wrapper">
                     <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
                         <div class="overflow-hidden  w-full h-[16rem]">
-                            <img src="./assets/homehero.jpg"
+                            <img src="/assets/homehero.jpg"
                                 class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
                                 alt="kitchen plumbing">
                         </div>
@@ -59,7 +59,7 @@ title : AquaZap | Home
                     </div>
                     <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
                         <div class="overflow-hidden  w-full h-[16rem]">
-                            <img src="./assets/homehero.jpg"
+                            <img src="/assets/homehero.jpg"
                                 class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
                                 alt="kitchen plumbing">
                         </div>
@@ -70,7 +70,7 @@ title : AquaZap | Home
                     </div>
                     <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
                         <div class="overflow-hidden  w-full h-[16rem]">
-                            <img src="./assets/homehero.jpg"
+                            <img src="/assets/homehero.jpg"
                                 class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
                                 alt="kitchen plumbing">
                         </div>
@@ -81,7 +81,7 @@ title : AquaZap | Home
                     </div>
                     <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
                         <div class="overflow-hidden  w-full h-[16rem]">
-                            <img src="./assets/homehero.jpg"
+                            <img src="/assets/homehero.jpg"
                                 class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
                                 alt="kitchen plumbing">
                         </div>
@@ -92,7 +92,7 @@ title : AquaZap | Home
                     </div>
                     <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
                         <div class="overflow-hidden  w-full h-[16rem]">
-                            <img src="./assets/homehero.jpg"
+                            <img src="/assets/homehero.jpg"
                                 class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
                                 alt="kitchen plumbing">
                         </div>
@@ -103,7 +103,7 @@ title : AquaZap | Home
                     </div>
                     <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
                         <div class="overflow-hidden  w-full h-[16rem]">
-                            <img src="./assets/homehero.jpg"
+                            <img src="/assets/homehero.jpg"
                                 class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
                                 alt="kitchen plumbing">
                         </div>
@@ -121,94 +121,15 @@ title : AquaZap | Home
         </div>
     </section>
 
-    <!-- -->
-    <section class="mycontainer paddingY bg-[var(--bgCream)]">
-        <!-- Main wrapper for the cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Card 1 -->
-            <div class="bg-white shadow-md rounded-lg p-6 text-center">
-                <div class="text-blue-500 mb-4 flex justify-center items-center">
-                    <!-- Example icon (replace with actual SVG or image) -->
-                    <img src="./assets/handshake.png" alt="handshake" class="w-20">
-                </div>
-                <h3 class="text-xl font-semibold text-[var(--darkBlue)] font-semibold mb-2 ">Gotta Love It Guarantee®
-                </h3>
-                <p class="text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis sunt sit a assumenda
-                    delectus pariatur illo commodi eius fuga!
-                </p>
-            </div>
-            <!-- Card 2 -->
-            <div class="bg-white shadow-md rounded-lg p-6 text-center">
-                <div class="text-blue-500 mb-4 flex justify-center items-center">
-                    <!-- Example icon (replace with actual SVG or image) -->
-                    <img src="./assets/fan.png" alt="fan" class="w-20">
-                </div>
-                <h3 class="text-xl font-semibold text-[var(--darkBlue)] font-semibold mb-2 ">Faster Dry Times</h3>
-                <p class="text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laborum nostrum laboriosam
-                    adipisci non nihil.
-                </p>
-            </div>
-            <!-- Card 3 -->
-            <div class="bg-white shadow-md rounded-lg p-6 text-center">
-                <div class="text-blue-500 mb-4 flex justify-center items-center">
-                    <!-- Example icon (replace with actual SVG or image) -->
-                    <img src="./assets/stars.png" alt="starts" class="w-20">
-                </div>
-                <h3 class="text-xl font-semibold text-[var(--darkBlue)] font-semibold mb-2 ">Residue Free® Clean</h3>
-                <p class="text-gray-600">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, provident. Saepe quasi dolore
-                    expedita, cupiditate nam, facilis laboriosam tempora quas nulla corrupti eveniet repellat ea magni,
-                    dolorem tenetur quae fugit?
-                </p>
-            </div>
-        </div>
-    </section>
+    <!-- Servise Card Section -->
+    {% include "serviceCard.njk" %}
 
-    <!--  -->
-    <section class="mycontainer paddingY">
-        <div class=" grid grid-cols-1 lg:grid-cols-2  gap-8">
-            <!-- Image Section -->
-            <div class="">
-                <img src="./assets/carpetClean.webp" alt="Professional cleaning"
-                    class="rounded-lg shadow-md h-full object-cover" />
-            </div>
-            <!-- Text Section -->
-            <div class=" flex flex-col justify-center">
-                <h4 class="text-2xl md:text-3xl font-bold text-[var(--darkBlue)] mb-4">
-                    Experts in the Science of Clean™
-                </h4>
-                <h2 class="text-lg font-semibold text-gray-700 mb-2">
-                    People and technology you can trust.
-                </h2>
-                <p class="text-gray-600 mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, nobis. Nesciunt itaque
-                    nihil, asperiores est nulla quas consectetur quaerat aliquam. Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Quae, blanditiis accusantium. Numquam aspernatur quaerat laudantium!
-                </p>
-                <p class="text-gray-600 mb-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quas, doloribus pariatur sequi
-                    praesentium officiis incidunt accusantium quibusdam facere ducimus!
-                </p>
-                <ul class="list-disc list-inside text-gray-600 mb-6 carpetClean">
-                    <li><span class="text-[var(--primaryColor)] font-bold">&#x2713;</span> Safe for People, Pets, and
-                        the Planet</li>
-                    <li><span class="text-[var(--primaryColor)] font-bold">&#x2713;</span> Patented Zerorez Technology
-                    </li>
-                    <li><span class="text-[var(--primaryColor)] font-bold">&#x2713;</span> Platinum Certification by the
-                        Carpet and Rug Institute</li>
-                </ul>
-                <a href="./pages/contact/index.html#contactus"
-                    class="bg-[var(--green)] text-[var(--colorWhite)] py-2 px-4 rounded-md hover:bg-[var(--greenHover)] transition duration-300 ease-in-out text-[1.1rem] uppercase w-fit">Schedule
-                    Service
-                </a>
-            </div>
-        </div>
-    </section>
+    <!-- Describe Sction1 -->
+    {% include "describeSection1.njk" %}
+    
 
     <!-- Testimonial -->
-    <section class="mycontainer paddingY bg-[var(--bgCream)]">
+    <section class="mycontainer paddingY bg-[var(--colorWhite)]">
         <div class="mb-10">
             <h2 class="text-center text-4xl mb-3 text-[var(--darkBlue)] font-bold">Client Voices</h2>
             <p class="hidden sm:block text-center  text-[var(--colorDark)]">Our customers would refer AquaZap to a friend. Experience The AquaZap Difference for yourself!
@@ -244,4 +165,9 @@ title : AquaZap | Home
             </div>
         </div>
     </section>
+
+    {% include "accordination.njk" %}
+
+
+    
 

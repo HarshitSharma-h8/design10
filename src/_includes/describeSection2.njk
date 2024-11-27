@@ -1,0 +1,30 @@
+<!-- Describe Section2 -->
+    <section class="mycontainer paddingY">
+        <div class=" grid grid-cols-1 lg:grid-cols-2  gap-8">
+            <!-- Text Section -->
+            <div class=" flex flex-col justify-center">
+                <h4 class="text-2xl md:text-3xl font-bold text-[var(--darkBlue)] mb-4">
+                    {{describe_section2_title1}}
+                </h4>
+                <h4 class="{{describe_section1_title2_hidden}} text-lg font-semibold text-gray-700 mb-2">
+                    {{describe_section2_title2}}
+                </h4>
+                <p class="text-gray-600 mb-4">
+                    {{describe_section2_para1}}
+                </p>
+                <p class="text-gray-600 mb-4">
+                    {{describe_section2_para2}}
+                </p>
+                <ul class="{{describe_section2_list_hidden}} list-disc list-inside text-gray-600 mb-6 carpetClean">
+                    <li><span class="text-[var(--primaryColor)] font-bold">&#x2713;</span> {{describe_section2_point1}}</li>
+                    <li><span class="text-[var(--primaryColor)] font-bold">&#x2713;</span> {{describe_section2_point2}}</li>
+                    <li><span class="text-[var(--primaryColor)] font-bold">&#x2713;</span> {{describe_section2_point3}}</li>
+                </ul>
+            </div>
+            <!-- Image Section -->
+            <div class="">
+                <img src={{describe_section2_img}} alt={{describe_section2_alt}}
+                    class="rounded-lg shadow-md h-full object-cover" />
+            </div>
+        </div>
+    </section>
