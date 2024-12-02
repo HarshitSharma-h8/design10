@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Top 5 Plumbing Tips for Homeowners",
+    "date": "2024-11-27",
+    "author": "Jane Doe",
+    "summary": "Learn essential plumbing tips that every homeowner should know to prevent costly repairs.",
+    "tags": ["Plumbing Tips", "Home Maintenance", "DIY"],
+    "content": "Regular maintenance of your plumbing system can prevent major issues...",
+    "slug": "plumbing-tips-homeowners",
+    "img" : "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "How to Fix a Leaky Faucet in 5 Steps",
+    "date": "2024-11-25",
+    "author": "John Smith",
+    "summary": "A simple guide to fixing a leaky faucet and saving water in your home.",
+    "tags": ["Leaky Faucet", "DIY", "Water Conservation"],
+    "content": "A dripping faucet can waste gallons of water each day...",
+    "slug": "fix-leaky-faucet",
+    "img" : "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "Signs You Need to Call a Professional Plumber",
+    "date": "2024-11-22",
+    "author": "Jane Doe",
+    "summary": "Learn how to recognize when a plumbing issue requires a professional's help.",
+    "tags": ["Plumbing Problems", "Professional Help", "Home Repairs"],
+    "content": "While some plumbing issues can be fixed at home, others require expertise...",
+    "slug": "call-professional-plumber",
+    "img" : "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "Benefits of Installing a Tankless Water Heater",
+    "date": "2024-11-20",
+    "author": "Alice Johnson",
+    "summary": "Explore the advantages of switching to a tankless water heater for your home.",
+    "tags": ["Tankless Water Heater", "Energy Efficiency", "Home Improvement"],
+    "content": "Tankless water heaters provide hot water on demand...",
+    "slug": "tankless-water-heater-benefits",
+    "img" : "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "Preventing Clogged Drains: Best Practices",
+    "date": "2024-11-18",
+    "author": "Bob Brown",
+    "summary": "Simple practices to keep your drains clear and prevent costly clogs.",
+    "tags": ["Clogged Drains", "Maintenance", "DIY"],
+    "content": "Preventing clogs starts with being mindful of what goes down the drain...",
+    "slug": "preventing-clogged-drains",
+    "img" : "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "Winter Plumbing Maintenance Checklist",
+    "date": "2024-11-15",
+    "author": "Jane Doe",
+    "summary": "Prepare your plumbing for winter with this essential maintenance checklist.",
+    "tags": ["Winter Plumbing", "Maintenance", "Cold Weather"],
+    "content": "Frozen pipes can cause serious damage, so it's crucial to prepare...",
+    "slug": "winter-plumbing-checklist",
+    "img" : "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "The Importance of Water Softener Systems",
+    "date": "2024-11-12",
+    "author": "Tom Lee",
+    "summary": "Discover why installing a water softener system can benefit your plumbing.",
+    "tags": ["Water Softener", "Plumbing Maintenance", "Hard Water"],
+    "content": "Hard water can damage your pipes and appliances over time...",
+    "slug": "water-softener-importance",
+    "img" : "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "Emergency Plumbing: What to Do Before Help Arrives",
+    "date": "2024-11-10",
+    "author": "Jane Doe",
+    "summary": "Steps to take during a plumbing emergency while waiting for a plumber.",
+    "tags": ["Emergency Plumbing", "DIY", "Home Safety"],
+    "content": "Knowing how to react in a plumbing emergency can minimize damage...",
+    "slug": "emergency-plumbing-tips",
+    "img" : "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "How to Unclog a Toilet Without a Plunger",
+    "date": "2024-11-05",
+    "author": "John Smith",
+    "summary": "Alternative methods for unclogging a toilet when a plunger isn't available.",
+    "tags": ["Clogged Toilet", "DIY", "Home Hacks"],
+    "content": "If you don’t have a plunger, you can still unclog your toilet using common items...",
+    "slug": "unclog-toilet-without-plunger",
+    "img" : "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "Pipe Insulation: Why It Matters for Your Plumbing",
+    "date": "2024-11-03",
+    "author": "Alice Johnson",
+    "summary": "Learn why insulating your pipes is crucial for protecting your plumbing system.",
+    "tags": ["Pipe Insulation", "Energy Efficiency", "Home Maintenance"],
+    "content": "Insulating your pipes can prevent freezing and reduce energy costs...",
+    "slug": "pipe-insulation-benefits",
+    "img" : "/assets/blog/blog1.jpg"
+  }
+]

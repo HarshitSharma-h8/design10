@@ -143,7 +143,7 @@ describe_section1_point3 : "Platinum Certification by the Carpet and Rug Institu
                     <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden h-[20rem] p-8">
                         <div class="flex flex-col justify-between h-full">
                            <div class="stars">
-                               {% for i in range(1, 6) %}
+                               {% for testimonial in testimonials %}
                                     {% if i <= testimonial.stars %} 
                                         <span class="text-[var(--gold)] text-lg">&#9733;</span>
                                     {% endif %}
@@ -166,7 +166,9 @@ describe_section1_point3 : "Platinum Certification by the Carpet and Rug Institu
         </div>
     </section>
 
-    {% include "accordination.njk" %}
+
+
+    
 
 
     

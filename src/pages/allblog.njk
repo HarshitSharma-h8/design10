@@ -1,0 +1,41 @@
+---
+layout : 'base.njk'
+title : AquaZap | All Blog
+
+heroImgSrc : "/assets/homehero.jpg"
+heroImgAlt : "HomePageHeroImg"
+heroTitle : "Helpful Home Tips: AquaZap Blog"
+heroBTN : "hidden"
+
+pagination:
+  data: blogs  
+  size: 3      
+  alias: blogsItem
+---
+
+{% include "heroSection.njk" %}
+
+<section class="mycontainer paddingY">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {% for blog in pagination.items %}
+      <a href="/blog/{{ blog.slug }}" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
+        <img src={{blog.img}} alt={{blog.title}} class="">
+        <h1 class="text-xl p-4">{{blog.title}}</h1>
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="flex justify-center item-center gap-4 mt-10">
+    {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}"
+                class="w-fit block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Previous page
+      </a>
+    {% endif %}
+    {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}"
+                class="w-fit block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Next page
+      </a>
+    {% endif %}
+  </div>
+
+</section>
