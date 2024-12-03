@@ -3,11 +3,11 @@
     "title": "Top 5 Plumbing Tips for Homeowners",
     "date": "2024-11-27",
     "author": "Jane Doe",
-    "summary": "Learn essential plumbing tips that every homeowner should know to prevent costly repairs.",
+    "summary": "Lorem ipsum dolor sit amet. Et voluptas rerum rem inventore dolorem sed possimus voluptas. Qui earum vitae sed veritatis dicta qui eligendi perferendis est officiis omnis et officiis incidunt et earum ipsum? 33 ipsum delectus vel minus ipsam qui velit molestias. Qui atque sint ea asperiores eaque non dolor deserunt et vitae enim.",
     "tags": ["Plumbing Tips", "Home Maintenance", "DIY"],
-    "content": "Regular maintenance of your plumbing system can prevent major issues...",
+    "content": "Lorem ipsum dolor sit amet. Et voluptas rerum rem inventore dolorem sed possimus voluptas. Qui earum vitae sed veritatis dicta qui eligendi perferendis est officiis omnis et officiis incidunt et earum ipsum? 33 ipsum delectus vel minus ipsam qui velit molestias. Qui atque sint ea asperiores eaque non dolor deserunt et vitae enim. Aut enim nulla hic voluptatibus delectus est voluptate repellat rem animi soluta. In eveniet odio aut galisum mollitia vel totam impedit ea dignissimos nemo 33 facilis exercitationem. Non porro dolorum aut natus laborum rem doloremque expedita ea deserunt aperiam ab provident ipsum. Ea culpa nobis aut placeat reiciendis est consequatur laborum qui accusamus illum. Sed sunt quia ut odit nobis At laborum expedita est nobis voluptatem ut sint ducimus.",
     "slug": "plumbing-tips-homeowners",
-    "img" : "/assets/blog/blog1.jpg"
+    "img": "/assets/blog/blog1.jpg"
   },
   {
     "title": "How to Fix a Leaky Faucet in 5 Steps",
@@ -17,7 +17,7 @@
     "tags": ["Leaky Faucet", "DIY", "Water Conservation"],
     "content": "A dripping faucet can waste gallons of water each day...",
     "slug": "fix-leaky-faucet",
-    "img" : "/assets/blog/blog1.jpg"
+    "img": "/assets/blog/blog1.jpg"
   },
   {
     "title": "Signs You Need to Call a Professional Plumber",
@@ -27,7 +27,7 @@
     "tags": ["Plumbing Problems", "Professional Help", "Home Repairs"],
     "content": "While some plumbing issues can be fixed at home, others require expertise...",
     "slug": "call-professional-plumber",
-    "img" : "/assets/blog/blog1.jpg"
+    "img": "/assets/blog/blog1.jpg"
   },
   {
     "title": "Benefits of Installing a Tankless Water Heater",
@@ -37,7 +37,7 @@
     "tags": ["Tankless Water Heater", "Energy Efficiency", "Home Improvement"],
     "content": "Tankless water heaters provide hot water on demand...",
     "slug": "tankless-water-heater-benefits",
-    "img" : "/assets/blog/blog1.jpg"
+    "img": "/assets/blog/blog1.jpg"
   },
   {
     "title": "Preventing Clogged Drains: Best Practices",
@@ -47,7 +47,7 @@
     "tags": ["Clogged Drains", "Maintenance", "DIY"],
     "content": "Preventing clogs starts with being mindful of what goes down the drain...",
     "slug": "preventing-clogged-drains",
-    "img" : "/assets/blog/blog1.jpg"
+    "img": "/assets/blog/blog1.jpg"
   },
   {
     "title": "Winter Plumbing Maintenance Checklist",
@@ -57,7 +57,7 @@
     "tags": ["Winter Plumbing", "Maintenance", "Cold Weather"],
     "content": "Frozen pipes can cause serious damage, so it's crucial to prepare...",
     "slug": "winter-plumbing-checklist",
-    "img" : "/assets/blog/blog1.jpg"
+    "img": "/assets/blog/blog1.jpg"
   },
   {
     "title": "The Importance of Water Softener Systems",
@@ -67,7 +67,7 @@
     "tags": ["Water Softener", "Plumbing Maintenance", "Hard Water"],
     "content": "Hard water can damage your pipes and appliances over time...",
     "slug": "water-softener-importance",
-    "img" : "/assets/blog/blog1.jpg"
+    "img": "/assets/blog/blog1.jpg"
   },
   {
     "title": "Emergency Plumbing: What to Do Before Help Arrives",
@@ -77,7 +77,7 @@
     "tags": ["Emergency Plumbing", "DIY", "Home Safety"],
     "content": "Knowing how to react in a plumbing emergency can minimize damage...",
     "slug": "emergency-plumbing-tips",
-    "img" : "/assets/blog/blog1.jpg"
+    "img": "/assets/blog/blog1.jpg"
   },
   {
     "title": "How to Unclog a Toilet Without a Plunger",
@@ -87,7 +87,7 @@
     "tags": ["Clogged Toilet", "DIY", "Home Hacks"],
     "content": "If you don’t have a plunger, you can still unclog your toilet using common items...",
     "slug": "unclog-toilet-without-plunger",
-    "img" : "/assets/blog/blog1.jpg"
+    "img": "/assets/blog/blog1.jpg"
   },
   {
     "title": "Pipe Insulation: Why It Matters for Your Plumbing",
@@ -97,6 +97,85 @@
     "tags": ["Pipe Insulation", "Energy Efficiency", "Home Maintenance"],
     "content": "Insulating your pipes can prevent freezing and reduce energy costs...",
     "slug": "pipe-insulation-benefits",
-    "img" : "/assets/blog/blog1.jpg"
+    "img": "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "DIY Plumbing Tools Every Homeowner Should Have",
+    "date": "2024-11-28",
+    "author": "Mark White",
+    "summary": "A list of essential plumbing tools that can help you tackle minor issues on your own.",
+    "tags": ["Plumbing Tools", "DIY", "Home Maintenance"],
+    "content": "Having the right tools can make small plumbing tasks much easier...",
+    "slug": "diy-plumbing-tools",
+    "img": "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "How to Detect Water Leaks in Your Home",
+    "date": "2024-11-26",
+    "author": "Samantha Green",
+    "summary": "Learn how to identify hidden water leaks before they cause major damage.",
+    "tags": ["Water Leaks", "Home Inspection", "DIY"],
+    "content": "Early detection of leaks can save you from costly repairs...",
+    "slug": "detect-water-leaks",
+    "img": "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "The Pros and Cons of Different Pipe Materials",
+    "date": "2024-11-24",
+    "author": "Bob Brown",
+    "summary": "An overview of the most common pipe materials and their advantages and disadvantages.",
+    "tags": ["Pipe Materials", "Home Improvement", "Plumbing"],
+    "content": "Choosing the right pipe material is crucial for a durable plumbing system...",
+    "slug": "pipe-materials-guide",
+    "img": "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "Why You Should Consider a Plumbing Inspection Before Buying a Home",
+    "date": "2024-11-21",
+    "author": "Alice Johnson",
+    "summary": "A plumbing inspection can reveal hidden issues before you purchase a property.",
+    "tags": ["Plumbing Inspection", "Home Buying", "Maintenance"],
+    "content": "Buying a home is a major investment, and a plumbing inspection is essential...",
+    "slug": "plumbing-inspection-home-buying",
+    "img": "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "Tips for Conserving Water in Your Home",
+    "date": "2024-11-19",
+    "author": "Tom Lee",
+    "summary": "Simple and effective ways to reduce water usage and lower your utility bills.",
+    "tags": ["Water Conservation", "Eco-Friendly", "DIY"],
+    "content": "Conserving water not only helps the environment but also reduces costs...",
+    "slug": "water-conservation-tips",
+    "img": "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "How to Handle a Burst Pipe Emergency",
+    "date": "2024-11-16",
+    "author": "Jane Doe",
+    "summary": "Quick steps to take if a pipe bursts in your home.",
+    "tags": ["Burst Pipe", "Emergency Tips", "Home Safety"],
+    "content": "A burst pipe can cause significant water damage if not addressed quickly...",
+    "slug": "burst-pipe-emergency",
+    "img": "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "Understanding Your Home's Plumbing System",
+    "date": "2024-11-14",
+    "author": "Mark White",
+    "summary": "An introduction to the components and functions of a residential plumbing system.",
+    "tags": ["Plumbing System", "Home Maintenance", "DIY"],
+    "content": "Knowing the basics of your home's plumbing can help you handle minor issues...",
+    "slug": "understanding-plumbing-system",
+    "img": "/assets/blog/blog1.jpg"
+  },
+  {
+    "title": "Common Plumbing Myths Debunked",
+    "date": "2024-11-11",
+    "author": "Samantha Green",
+    "summary": "Separating plumbing facts from fiction to help you make informed decisions.",
+    "tags": ["Plumbing Myths", "DIY", "Home Maintenance"],
+    "content": "There are many misconceptions about plumbing that can lead to costly mistakes...",
+    "img": "/assets/blog/blog1.jpg"
   }
 ]

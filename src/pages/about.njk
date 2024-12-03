@@ -92,3 +92,26 @@ describe_section1_title2_hidden : "hidden"
 
   {% include "accordination.njk" %}
 
+  <!-- Blogs -->
+<section class="mycontainer paddingY bg-[var(--colorWhite)]">
+    <div class="mb-10">
+        <h2 class="text-center text-4xl mb-3 text-[var(--darkBlue)] font-bold">AquaZap Blogs</h2>
+        {# <p class="hidden sm:block text-center  text-[var(--colorDark)]">Our customers would refer AquaZap to a friend. Experience The AquaZap Difference for yourself! #}
+        <a href="/pages/allblog"
+                class="w-fit mx-auto mt-8 block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Read More
+        </a>
+    </p>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {% for blog in blogs %}
+        {% if loop.index <= 3 %}
+            <a href="/blog/{{ blog.slug }}" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
+                <img src="{{ blog.img }}" alt="{{ blog.title }}" class="">
+                <h1 class="text-xl p-4">{{ blog.title }}</h1>
+            </a>
+        {% endif %}
+    {% endfor %}
+</div>
+</section>
+
