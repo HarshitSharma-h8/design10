@@ -16,8 +16,9 @@ heroBTN : "hidden"
 
 {% include "heroSection.njk" %}
 
-<section class="mycontainer paddingY bg-[var(--colorWhite)]">
-  <div>
+{# Blog #}
+<section class="mycontainer paddingY bg-[var(--colorWhite)] flex justify-center">
+  <div class="lg:w-[70%]">
     <h2 class="text-3xl font-normal">{{ blog.title }}</h2>
     <div class="flex item-center gap-6 mt-4">
       <span class="flex items-center gap-[.5rem] text-lg">
@@ -28,7 +29,7 @@ heroBTN : "hidden"
         {{blog.author}}</span>
     </div>
   
-    <img src={{blog.img}} alt={{blog.title}} class="lg:h-[60vh] lg:w-[80%] object-cover mt-4 rounded-md">
+    <img src={{blog.img}} alt={{blog.title}} class="lg:h-[60vh] w-full object-cover mt-4 rounded-md">
     <div class="mt-4">
       <!-- Iterating through the tags array -->
       {% for tag in blog.tags %}
@@ -42,6 +43,7 @@ heroBTN : "hidden"
   </div>
 </section>
 
+{# Make a call section #}
 <section class=" paddingY bg-[var(--bgCream)] text-[var(--colorWhite)] h-[25vh] mt-40">
   <div class="w-fit mx-auto rounded-md bg-[var(--primaryColor)] py-12 px-12 text-center text-white -mt-[10rem]">
     <h2 class="text-3xl font-bold mb-6">Book a Cleaning with AquaZap Today!</h2>
