@@ -7,19 +7,6 @@ heroImgAlt : "HomePageHeroImg"
 heroTitle : "Plumbing & Repair"
 heroContent : "Lorem ipsum dolor sit amet. Est amet eaque cum suscipit inventore ea quisquam voluptate id tempore pariatur aut eveniet recusandae et quae tempora aut debitis enim. Non quos debitis non similique libero aut aliquam illo sed ipsum odit aut harum minus qui rerum corrupti."
 
-accordination_title_1 : "Est iure fugiat sed iure nemo."
-accordination_content_1 : "Lorem ipsum dolor sit amet. Id maiores soluta non doloremque quidem hic aliquid suscipit rem nobis praesentium cum molestiae saepe. Ad nemo saepe rem dolor tenetur a beatae iusto aut earum quos est consequatur dolore."
-accordination_title_2 : "Quo quibusdam ratione ut quisquam amet ut maiores molestiae!"
-accordination_content_2 : "Ea consequatur necessitatibus 33 iure deserunt et impedit voluptate. Hic soluta quae ut perspiciatis quas aut obcaecati dolorum sed ipsum perferendis est illum sint ut excepturi dolorum. Sit rerum similique sed internos commodi 33 sunt dolorum? Et voluptatem ipsum eos quia aperiam in cupiditate atque vel distinctio eius ut voluptatem labore."
-accordination_title_3 : "Sit perspiciatis voluptatem sit nemo"
-accordination_content_3 : "Nam eveniet enim ut tempore adipisci eos voluptas aliquam et ipsam illo aut dolor ipsa rem asperiores dolorem sit autem sint. Ad inventore enim qui laboriosam quia nam deserunt consequatur qui unde error non quibusdam illo. Et labore repellendus et nemo ipsum et inventore magnam. Ut eligendi temporibus est quos odit ut cumque galisum est libero reprehenderit et saepe voluptas ut doloribus earum aut nesciunt consequatur."
-accordination_title_4 : "Ex tenetur earum sed officiis aliquam!"
-accordination_content_4 : "Lorem ipsum dolor sit amet. Et eveniet perspiciatis ut explicabo soluta et debitis earum ea assumenda libero ut rerum quia qui ducimus pariatur. Sit magni eaque non nulla eius est dolores enim eum quam dolorem qui corporis omnis. Qui veritatis odio qui quas earum rem expedita accusantium sit saepe iste."
-accordination_title_5 : "Sit maiores enim et ipsum quia."
-accordination_content_5 : "Ea consequatur necessitatibus 33 iure deserunt et impedit voluptate. Hic soluta quae ut perspiciatis quas aut obcaecati dolorum sed ipsum perferendis est illum sint ut excepturi dolorum. Sit rerum similique sed internos commodi 33 sunt dolorum? Et voluptatem ipsum eos quia aperiam in cupiditate atque vel distinctio eius ut voluptatem labore."
-
-
-
 
 describe_section1_img : "/assets/carpetClean.webp"
 describe_section1_alt : "Professional cleaning"
@@ -31,6 +18,7 @@ describe_section1_point1 : "Safe for People, Pets, and the Planet"
 describe_section1_point2 : "Patented Zerorez Technology"
 describe_section1_point3 : "Platinum Certification by the Carpet and Rug Institute"
 ---
+
 
 {% include "heroSection.njk" %}
 
@@ -169,21 +157,22 @@ describe_section1_point3 : "Platinum Certification by the Carpet and Rug Institu
 <section class="mycontainer paddingY bg-[var(--colorWhite)]">
     <div class="mb-10">
         <h2 class="text-center text-4xl mb-3 text-[var(--darkBlue)] font-bold">AquaZap Blogs</h2>
-        {# <p class="hidden sm:block text-center  text-[var(--colorDark)]">Our customers would refer AquaZap to a friend. Experience The AquaZap Difference for yourself! #}
         <a href="/pages/allblog"
                 class="w-fit mx-auto mt-8 block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Read More
         </a>
-    </p>
-</div>
+    </div>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    {% for blog in blogs %}
-        {% if loop.index <= 3 %}
-            <a href="/blog/{{ blog.slug }}" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <img src="{{ blog.img }}" alt="{{ blog.title }}" class="">
-                <h1 class="text-xl p-4">{{ blog.title }}</h1>
-            </a>
-        {% endif %}
-    {% endfor %}
-</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {% for blog in blogs %}
+            {% if loop.index <= 3 %}
+                <a href="/blog/{{ blog.slug }}" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <img src="{{ blog.img }}" alt="{{ blog.title }}" class="">
+                    <h1 class="text-xl p-4">{{ blog.title }}</h1>
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
 </section>
+
+<!-- accordination -->
+{% include "accordion.njk" %}

@@ -138,7 +138,7 @@
                     </div>
                     <a href="./index.html"
                         class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
-                    <a href="./pages/about/index.html"
+                    <a href="/pages/about"
                         class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
                     <a href="#" <li class="relative">
                         <a href="#"
@@ -224,6 +224,7 @@
   </header> 
   <main>
     
+
 <!-- herosection -Home -->
     <section class="bg-[var(--primaryColor)] md:h-[60vh] md:flex  items-center">
         <div class="md:w-[50%] h-[50vh] md:h-full">
@@ -601,67 +602,144 @@
 <section class="mycontainer paddingY bg-[var(--colorWhite)]">
     <div class="mb-10">
         <h2 class="text-center text-4xl mb-3 text-[var(--darkBlue)] font-bold">AquaZap Blogs</h2>
-        
         <a href="/pages/allblog"
                 class="w-fit mx-auto mt-8 block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Read More
         </a>
-    </p>
-</div>
+    </div>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+            
+                <a href="/blog/plumbing-tips-homeowners" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <img src="/assets/blog/blog1.jpg" alt="Top 5 Plumbing Tips for Homeowners" class="">
+                    <h1 class="text-xl p-4">Top 5 Plumbing Tips for Homeowners</h1>
+                </a>
+            
+        
+            
+                <a href="/blog/fix-leaky-faucet" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <img src="/assets/blog/blog1.jpg" alt="How to Fix a Leaky Faucet in 5 Steps" class="">
+                    <h1 class="text-xl p-4">How to Fix a Leaky Faucet in 5 Steps</h1>
+                </a>
+            
+        
+            
+                <a href="/blog/call-professional-plumber" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <img src="/assets/blog/blog1.jpg" alt="Signs You Need to Call a Professional Plumber" class="">
+                    <h1 class="text-xl p-4">Signs You Need to Call a Professional Plumber</h1>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+</section>
+
+<!-- accordination -->
+<!-- Accordination Section -->
+<section class="mycontainer paddingY">
+    <div class="mb-10">
+        <h2 class="text-center text-4xl mb-3 text-[var(--darkBlue)] font-bold">Frequently Asked Questions</h2>
+    </div>
+    <div class="space-y-4 lg:px-[10rem]">
     
-        
-            <a href="/blog/plumbing-tips-homeowners" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <img src="/assets/blog/blog1.jpg" alt="Top 5 Plumbing Tips for Homeowners" class="">
-                <h1 class="text-xl p-4">Top 5 Plumbing Tips for Homeowners</h1>
-            </a>
-        
+        <div class="border-l-[.2rem] border-[var(--primaryColor)] rounded shadow-md">
+        <button 
+            class="w-full flex justify-between items-center p-4 bg-white text-left text-lg font-semibold text-[var(--colorDark)] focus:outline-none"
+            onclick="toggleAccordion('1')">
+            Accordion Item 1
+            <span id="icon-1" class="transform transition-transform rotate-180 hover:text-[var(--primaryColor)] transition duration-300 ease-in-out">
+                <i class="fa-solid fa-chevron-up"></i>
+            </span>
+        </button>
+        <hr>
+        <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-4">
+            <div class="p-4 bg-white text-[var(--textGray)]">
+            This is the content for item 1.
+            </div>
+        </div>
+        </div>
     
-        
-            <a href="/blog/fix-leaky-faucet" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <img src="/assets/blog/blog1.jpg" alt="How to Fix a Leaky Faucet in 5 Steps" class="">
-                <h1 class="text-xl p-4">How to Fix a Leaky Faucet in 5 Steps</h1>
-            </a>
-        
+        <div class="border-l-[.2rem] border-[var(--primaryColor)] rounded shadow-md">
+        <button 
+            class="w-full flex justify-between items-center p-4 bg-white text-left text-lg font-semibold text-[var(--colorDark)] focus:outline-none"
+            onclick="toggleAccordion('2')">
+            Accordion Item 2
+            <span id="icon-1" class="transform transition-transform rotate-180 hover:text-[var(--primaryColor)] transition duration-300 ease-in-out">
+                <i class="fa-solid fa-chevron-up"></i>
+            </span>
+        </button>
+        <hr>
+        <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-4">
+            <div class="p-4 bg-white text-[var(--textGray)]">
+            This is the content for item 2.
+            </div>
+        </div>
+        </div>
     
-        
-            <a href="/blog/call-professional-plumber" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
-                <img src="/assets/blog/blog1.jpg" alt="Signs You Need to Call a Professional Plumber" class="">
-                <h1 class="text-xl p-4">Signs You Need to Call a Professional Plumber</h1>
-            </a>
-        
+        <div class="border-l-[.2rem] border-[var(--primaryColor)] rounded shadow-md">
+        <button 
+            class="w-full flex justify-between items-center p-4 bg-white text-left text-lg font-semibold text-[var(--colorDark)] focus:outline-none"
+            onclick="toggleAccordion('3')">
+            Accordion Item 3
+            <span id="icon-1" class="transform transition-transform rotate-180 hover:text-[var(--primaryColor)] transition duration-300 ease-in-out">
+                <i class="fa-solid fa-chevron-up"></i>
+            </span>
+        </button>
+        <hr>
+        <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-4">
+            <div class="p-4 bg-white text-[var(--textGray)]">
+            This is the content for item 3.
+            </div>
+        </div>
+        </div>
     
-        
+        <div class="border-l-[.2rem] border-[var(--primaryColor)] rounded shadow-md">
+        <button 
+            class="w-full flex justify-between items-center p-4 bg-white text-left text-lg font-semibold text-[var(--colorDark)] focus:outline-none"
+            onclick="toggleAccordion('4')">
+            Accordion Item 4
+            <span id="icon-1" class="transform transition-transform rotate-180 hover:text-[var(--primaryColor)] transition duration-300 ease-in-out">
+                <i class="fa-solid fa-chevron-up"></i>
+            </span>
+        </button>
+        <hr>
+        <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-4">
+            <div class="p-4 bg-white text-[var(--textGray)]">
+            This is the content for item 3.
+            </div>
+        </div>
+        </div>
     
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-</div>
+    </div>
 </section>
   </main>
   <footer class="bg-[var(--darkBlue)]">
