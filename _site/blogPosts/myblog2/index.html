@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaZap | All Blog</title>
+    <title>Eleventy</title>
     <link rel="stylesheet" href="/style/style.css">
     <script src="/javascript/index.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -238,6 +238,7 @@
   </header> 
   <main>
     
+
 <!-- herosection -Home -->
     <section class="bg-[var(--primaryColor)] md:h-[60vh] md:flex  items-center">
         <div class="md:w-[50%] h-[50vh] md:h-full">
@@ -255,7 +256,7 @@
                 Service</a>
         </div>
         <div class="md:w-[50%] md:pl-[5rem] pl-[1rem] paddingY pr-[5rem] order-first">
-            <h1 class="text-5xl text-[var(--colorWhite)] font-bold">Helpful Home Tips: AquaZap Blog</h1>
+            <h1 class="text-5xl text-[var(--colorWhite)] font-bold">Eleventy</h1>
             <p class="text-[var(--colorWhite)] mt-2 mb-6 lg:text-lg">
                 
             </p>
@@ -263,23 +264,97 @@
                 class="hidden bg-[var(--darkBlue)] text-[var(--colorWhite)] hover:bg-[var(--colorWhite)] hover:text-[var(--darkBlue)] font-medium py-3 px-8 rounded-full  transition duration-300 ease-in-out text-[1.1rem] uppercase text-[1rem]">Schedule
                 Service
             </a>
+            
         </div>
-    </section>
+    </section> 
+<section
+  id="blogPost"
+  class="mycontainer paddingY bg-[var(--colorWhite)] flex justify-center"
+>
+  <div class="lg:w-[70%]">
+    <h2 class="text-3xl font-normal">Eleventy</h2>
+    <div class="flex item-center gap-6 mt-4">
+      <span class="flex items-center gap-[.5rem] text-lg">
+        <i class="fa-regular fa-clock"></i>
+        2023-08-02</span
+      >
+      <span class="flex items-center gap-[.5rem] text-lg">
+        <i class="fa-regular fa-user"></i>
+        Jhon Dao</span
+      >
+    </div>
+    <img
+      src="/assets/blog/blog1.jpg"
+      alt="Eleventy"
+      class="lg:h-[60vh] w-full object-cover mt-4 rounded-md"
+    />
 
-<section class="mycontainer paddingY">
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    
+    <h1>Welcome to My Blog!</h1>
+<p>This is my very first blog post. Here's what I think about Eleventy.</p>
+<h2>What is Eleventy?</h2>
+<p>Eleventy is a <strong>static site generator</strong> that can transform Markdown files into HTML files.</p>
+<h3>Features:</h3>
+<ul>
+<li>Easy to use</li>
+<li>Highly customizable</li>
+<li>Great for static websites</li>
+</ul>
+<h3>Example of an Image:</h3>
+<p><img src="https://images.pexels.com/photos/14448240/pexels-photo-14448240.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800&amp;lazy=load" alt="Eleventy logo"></p>
+<p>Stay tuned for more posts!</p>
+<h1>Car List</h1>
+<p>Here are 5 popular cars:</p>
+<ol>
+<li><strong>Toyota Corolla</strong> - A reliable and fuel-efficient compact car.</li>
+<li><strong>Honda Civic</strong> - Known for its durability and stylish design.</li>
+<li><strong>Tesla Model 3</strong> - A top-notch electric car with cutting-edge technology.</li>
+<li><strong>Ford Mustang</strong> - A classic American sports car with powerful performance.</li>
+<li><strong>Chevrolet Silverado</strong> - A durable and versatile pickup truck.</li>
+</ol>
+<p>Feel free to share your favorite car in the list or suggest others!</p>
+
   </div>
+</section>
 
-  <div class="flex justify-center item-center gap-4 mt-10">
-    
-      <a href="/pages/allblog/"
-                class="w-fit block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Previous page
-      </a>
-    
-    
+ 
+
+<section class=" paddingY bg-[var(--bgCream)] text-[var(--colorWhite)] h-[25vh] mt-40">
+  <div class="w-fit mx-auto rounded-md bg-[var(--primaryColor)] py-12 px-12 text-center text-white -mt-[10rem]">
+    <h2 class="text-3xl font-bold mb-6">Book a Cleaning with AquaZap Today!</h2>
+    <div class="flex justify-center gap-4">
+      <a href="/pages/contact" class="bg-white text-[var(--primaryColor)] py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition">SCHEDULE ONLINE</a>
+      <a href="tel:8669376739" class="bg-white text-[var(--primaryColor)] py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition">CALL NOW</a>
+    </div>
   </div>
+</section>
 
+<!-- blog 3 card -->
+<!-- Blogs -->
+<section class="mycontainer paddingY bg-[var(--colorWhite)]">
+    <div class="mb-10">
+        <h2 class="text-center text-4xl mb-3 text-[var(--darkBlue)] font-bold">AquaZap Blogs</h2>
+        <a href="/pages/allblog"
+                class="w-fit mx-auto mt-8 block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Read More
+        </a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+            
+                <a href="/blogPosts/myblog2/" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <img src="/assets/blog/blog1.jpg" alt="Eleventy" class="">
+                    <h1 class="text-xl p-4">Eleventy</h1>
+                </a>
+            
+        
+            
+                <a href="/blogPosts/myblog1/" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <img src="/assets/blog/blog1.jpg" alt="Understanding Plumbing: A Comprehensive Guide" class="">
+                    <h1 class="text-xl p-4">Understanding Plumbing: A Comprehensive Guide</h1>
+                </a>
+            
+        
+    </div>
 </section>
   </main>
   <footer class="bg-[var(--darkBlue)]">

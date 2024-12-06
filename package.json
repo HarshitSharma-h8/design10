@@ -1,8 +1,9 @@
 {
   "name": "design1011ty",
   "version": "1.0.0",
+  "type" : "module",
   "scripts": {
-    "dev" : "eleventy --serve",
+    "dev" : "npx eleventy --serve",
     "build" : "eleventy"
   },
   "keywords": [],

@@ -23,34 +23,24 @@
                         <a href="/pages/about"
                             class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
                         <li class="relative group ">
-                            <button href="#"
+                            <button onclick="window.location.href='/pages/ourservices';"
                                 class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Services
                                 <i
                                     class="fa-solid fa-chevron-down text-[var(--primaryColor)] text-[1rem] "></i></button>
                             <!-- Dropdown Menu -->
                             <ul
-                                class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
-                                <li><a href="./pages/allservice/index.html"
-                                        class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
-                                        Services</a>
-                                </li>
-                                <li><a href="./pages/basementservice/index.html"
-                                        class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Basement
-                                        Plumbing servise</a>
-                                </li>
-                                <li><a href="./pages/bathroomservice/index.html"
-                                        class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Bathroom
-                                        Plumbing</a></li>
-
-                                <li><a href="./pages/remodelingservice/index.html"
-                                        class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Remodeling
-                                        Service</a></li>
-                                <li><a href="./pages/gaslineservice/index.html"
-                                        class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Gas
-                                        Line Services</a></li>
-                                <li><a href="./pages/kitchenservice/index.html"
-                                        class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Kitchen
-                                        Plumbing</a></li>
+                                class="absolute left-0 top-[2.1rem] w-[20rem]  hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
+                                
+                                    <li><a href="/pages/ourservices"
+                                            class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
+                                            Services</a>
+                                    </li>
+                                    {% for service in services %}
+                                        <li><a href="/service/{{ service.name }}"
+                                            class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{ service.name }}</a>
+                                        </li>
+                                    {% endfor %}
+                                
                             </ul>
                         </li>
                         <li class="relative group">
@@ -74,8 +64,6 @@
 
                             </ul>
                         </li>
-                        <a href="./pages/projects/index.html"
-                            class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
                         <!-- <a href="#"
                         class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
                         <a href="/pages/allblog"
@@ -122,39 +110,27 @@
                     <a href="/pages/about"
                         class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
                     <a href="#" <li class="relative">
-                        <a href="#"
+                        <a 
                             class="flex items-center justify-between w-full hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold]"
                             onclick="toggleDropdown()">Services <i
                                 class="fa-solid fa-chevron-down transform transition duration-200 ease-in-out text-[var(--green)]"
                                 id="dropMenu"></i></a>
                         <!-- Dropdown Menu (Hidden by default) -->
                         <ul id="mobileDropdown" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
-                            <li><a href="./pages/allservice/index.html"
+                            <li><a href="/pages/ourservices"
                                     class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                     Services</a>
                             </li>
-                            <li><a href="./pages/basementservice/index.html"
-                                    class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Basement
-                                    Plumbing</a>
-                            </li>
-                            <li><a href="./pages/bathroomservice/index.html"
-                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Bathroom
-                                    Plumbing</a></li>
-                            <li><a href="./pages/remodelingservice/index.html"
-                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Remodeling
-                                    Service</a></li>
-                            <li><a href="./pages/gaslineservice/index.html"
-                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Gas
-                                    Line Services</a></li>
-                            <li><a href="./pages/kitchenservice/index.html"
-                                    class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Kitchen
-                                    Plumbing</a></li>
-
+                            {% for service in services %}
+                                    <li><a href="/service/{{ service.name }}"
+                                        class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{ service.name }}</a>
+                                    </li>
+                            {% endfor %}
                         </ul>
                         </li>
                         <li class="relative">
                             <a href="#"
-                                class="flex items-center justify-between w-full hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold]"
+                                class="flex items-center justify-between w-full hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold"
                                 onclick="toggleDropdown2()">Service Areas<i
                                     class="fa-solid fa-chevron-down transform transition duration-200 ease-in-out text-[var(--green)]"
                                     id="dropMenu2"></i></a>
@@ -180,8 +156,6 @@
 
                             </ul>
                         </li>
-                        <a href="./pages/projects/index.html"
-                            class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Projects</a>
                         <!-- <a href="#"
                             class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
                         <a href="/pages/allblog"

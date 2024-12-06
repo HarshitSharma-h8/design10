@@ -98,6 +98,9 @@ new Swiper('.slider-wrapper', {
 });
 
 
+
+
+// Accordion
 let activeAccordion = null;
 
 function toggleAccordion(index) {

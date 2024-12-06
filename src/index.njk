@@ -22,92 +22,7 @@ describe_section1_point3 : "Platinum Certification by the Carpet and Rug Institu
 
 {% include "heroSection.njk" %}
 
-<!-- Servise Tstimonial -->
-<section class=" mx-auto   bg-[var(--colorWhite)]  mycontainer paddingY">
-    <div class="mb-10">
-        <h2 class="text-center text-4xl mb-3 text-[var(--darkBlue)] font-bold">Best Services We Offer</h2>
-        <p class="hidden sm:block text-center  text-[var(--colorDark)]">Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry.<br> has been the industry's standard dummy text ever since the 1500s.
-            </p>
-    </div>
-
-    <div class="container swiper">
-        <div class="slider-wrapper">
-            <div class="card-list swiper-wrapper">
-                <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
-                    <div class="overflow-hidden  w-full h-[16rem]">
-                        <img src="/assets/homehero.jpg"
-                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
-                                alt="kitchen plumbing">
-                    </div>
-                    <a href="./pages/bathroomservice/index.html" class="p-4 flex items-center justify-between">
-                        <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Bathroom Plumbing</h4>
-                        <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
-                    </a>
-                </div>
-                <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
-                    <div class="overflow-hidden  w-full h-[16rem]">
-                        <img src="/assets/homehero.jpg"
-                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
-                                alt="kitchen plumbing">
-                    </div>
-                    <a href="./pages/basementservice/index.html" class="p-4 flex items-center justify-between">
-                        <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Basement Plumbing</h4>
-                        <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
-                    </a>
-                </div>
-                <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
-                    <div class="overflow-hidden  w-full h-[16rem]">
-                        <img src="/assets/homehero.jpg"
-                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
-                                alt="kitchen plumbing">
-                    </div>
-                    <a href="./pages/gaslineservice/index.html" class="p-4 flex items-center justify-between">
-                        <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Gas Line Service</h4>
-                        <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
-                    </a>
-                </div>
-                <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
-                    <div class="overflow-hidden  w-full h-[16rem]">
-                        <img src="/assets/homehero.jpg"
-                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
-                                alt="kitchen plumbing">
-                    </div>
-                    <a href="./pages/remodelingservice/index.html" class="p-4 flex items-center justify-between">
-                        <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Remodeling Service</h4>
-                        <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
-                    </a>
-                </div>
-                <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
-                    <div class="overflow-hidden  w-full h-[16rem]">
-                        <img src="/assets/homehero.jpg"
-                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
-                                alt="kitchen plumbing">
-                    </div>
-                    <a href="./pages/bathroomservice/index.html" class="p-4 flex items-center justify-between">
-                        <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Bathroom Plumbing</h4>
-                        <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
-                    </a>
-                </div>
-                <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
-                    <div class="overflow-hidden  w-full h-[16rem]">
-                        <img src="/assets/homehero.jpg"
-                                class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
-                                alt="kitchen plumbing">
-                    </div>
-                    <a href="./pages/kitchenservice/index.html" class="p-4 flex items-center justify-between">
-                        <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">Kitchen Plumbing</h4>
-                        <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-slide-button swiper-button-prev"></div>
-            <div class="swiper-slide-button swiper-button-next"></div>
-        </div>
-    </div>
-</section>
+{% include "serviceCrousel.njk" %}
 
 <!-- Servise Card Section -->
 {% include "serviceCard.njk" %}
@@ -153,26 +68,8 @@ describe_section1_point3 : "Platinum Certification by the Carpet and Rug Institu
     </div>
 </section>
 
-<!-- Blogs -->
-<section class="mycontainer paddingY bg-[var(--colorWhite)]">
-    <div class="mb-10">
-        <h2 class="text-center text-4xl mb-3 text-[var(--darkBlue)] font-bold">AquaZap Blogs</h2>
-        <a href="/pages/allblog"
-                class="w-fit mx-auto mt-8 block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Read More
-        </a>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {% for blog in blogs %}
-            {% if loop.index <= 3 %}
-                <a href="/blog/{{ blog.slug }}" class="border-2 hover:border-[var(--primaryColor)] rounded-md overflow-hidden shadow-md transition duration-300 ease-in-out">
-                    <img src="{{ blog.img }}" alt="{{ blog.title }}" class="">
-                    <h1 class="text-xl p-4">{{ blog.title }}</h1>
-                </a>
-            {% endif %}
-        {% endfor %}
-    </div>
-</section>
+<!-- blog 3 card -->
+{% include "blog3card.njk" %}
 
 <!-- accordination -->
 {% include "accordion.njk" %}
