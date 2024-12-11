@@ -10,15 +10,15 @@
     <div class="container swiper">
         <div class="slider-wrapper">
             <div class="card-list swiper-wrapper">
-                {% for service in services %}
+                {% for service in collections.services %}
                    <div class="card-item swiper-slide bg-[var(--primaryColor)] rounded-xl group overflow-hidden">
                     <div class="overflow-hidden  w-full h-[16rem]">
-                        <img src={{ service.img }}
+                        <img src={{ service.data.img }}
                                 class=" w-full h-full object-cover transition-transform duration-200 ease-in-out group-hover:scale-110"
                                 alt="kitchen plumbing">
                     </div>
-                    <a href="./pages/bathroomservice/index.html" class="p-4 flex items-center justify-between">
-                        <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">{{ service.name }}</h4>
+                    <a href="{{service.url}}" class="p-4 flex items-center justify-between">
+                        <h4 class="text-[var(--colorWhite)] text-xl font-medium  ">{{ service.data.title }}</h4>
                         <i class="fa-solid fa-chevron-right text-[var(--colorWhite)]"></i>
                     </a>
                 </div>

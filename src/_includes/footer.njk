@@ -42,33 +42,25 @@
             <div>
                 <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Quick Link</h5>
                 <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
-                    <li><a href="./pages/about/index.html"
+                    <li><a href="/pages/about"
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> About Us</a></li>
-                    <li><a href="./pages/projects/index.html"
-                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                class="fa-solid fa-angles-right"></i> Projects</a></li>
                     <!-- <li><a href="#" class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> Services</a></li> -->
-                    <li><a href="./pages/contact/index.html"
+                    <li><a href="/pages/contact"
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> Contact</a></li>
-                    <li><a href="./pages/blog/index.html"
+                    <li><a href="/pages/allblog"
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> Our Blog</a>
                     </li>
-                    <li><a href="./pages/Dublin/index.html"
+                    {% for serviceArea in collections.serviceAreas %}
+                        <li><a href="{{ serviceArea.url }}"
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                class="fa-solid fa-angles-right"></i> Dublin, Columbus</a>
-                    </li>
-                    <li><a href="./pages/Clintonville/index.html"
-                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                class="fa-solid fa-angles-right"></i> Clintonville, Columbus</a>
-                    </li>
-                    <li><a href="./pages/Downtown/index.html"
-                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                class="fa-solid fa-angles-right"></i> Downtown, Columbus</a>
-                    </li>
+                                class="fa-solid fa-angles-right"></i> {{serviceArea.data.title}}</a>
+                        </li>
+                    {% endfor %}
+                    
                 </ul>
             </div>
 
@@ -91,26 +83,17 @@
             <div>
                 <h5 class="text-xl font-semibold text-[var(--colorWhite)]">Our Services</h5>
                 <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
-                    <li><a href="./pages/remodelingservice/index.html"
+                    {% for service in collections.services %}
+                        <li><a href="{{service.url }}"
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                class="fa-solid fa-angles-right"></i> Remodeling Service</a></li>
-                    <li><a href="./pages/basementservice/index.html"
-                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                class="fa-solid fa-angles-right"></i> Basement Plumbing</a></li>
-                    <li><a href="./pages/bathroomservice/index.html"
-                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                class="fa-solid fa-angles-right"></i> Bathroom Plumbing</a></li>
-                    <li><a href="./pages/gaslineservice/index.html"
-                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                class="fa-solid fa-angles-right"></i> Gas Line Services</a></li>
-                    <li><a href="./pages/kitchenservice/index.html"
-                            class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
-                                class="fa-solid fa-angles-right"></i> Kitchen Plumbing</a></li>
+                                class="fa-solid fa-angles-right"></i>{{ service.data.title }}</a></li>
+                    {% endfor %}
+                   
                 </ul>
             </div>
         </div>
         <div class="bg-[var(--colorDark2)] text-[var(--colorWhite)] text-center p-2 sm:p-4 lg:text-base px-4 md:px-10">
             <p>&#169; Copyright <span id="year"></span> | AquaZap. - Plumber Website Theme | All right reserved. | <a
-                    href="./pages/privacypolicy/index.html" class="underline">Privacy Policy</a></p>
+                    href="/pages/privacyPolicy" class="underline">Privacy Policy</a></p>
         </div>
   </footer>

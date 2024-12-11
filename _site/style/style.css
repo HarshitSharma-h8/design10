@@ -18,34 +18,67 @@
     --bgCream : #f2f2f2;
   }
 
+  /* uTility */
+  .overlay {
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+  }
+  .serviceArea_card:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+
+  #blogPost h1,h2,h3,h4,h5,h6{
+    color: var(--darkBlue);
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+  }
+
   #blogPost h1 {
-    color: red;
     font-size: 40px;
   }
   #blogPost h2 {
-    color: green;
+    
     font-size: 30px;
   }
   #blogPost h3 {
-    color: yellow;
-    font-size: 20px;
+    
+    font-size: 28px;
   }
+  #blogPost h4 {
+    
+    font-size: 26px;
+  }
+  #blogPost h5 {
+    
+    font-size: 24px;
+  }
+  #blogPost h6 {
+    
+    font-size: 22px;
+  }
+
   #blogPost p {
-    color: gray;
-    font-size: 20px;
+    color: var(--textGray);
+    font-size: 18px;
   }
 
   #blogPost ul {
     list-style: disc;
-    color: rgb(32, 31, 31);
-    font-size: 20px;
-    list-style-position: inside;
+    color: var(--textGray);
+    font-size: 18px;
+    padding-left: 20px;
+    margin-top: .8rem;
+    /* list-style-position: inside; */
   }
   #blogPost ol {
     list-style:decimal;
-    color: rgb(32, 31, 31);
-    font-size: 20px;
-    list-style-position: inside;
+    color: var(--textGray);
+    font-size: 18px;
+    padding-left: 20px;
+    /* list-style-position: inside; */
+  }
+  #blogPost img {
+    margin: 1rem 0rem;
   }
 
   /* utilities */
@@ -77,6 +110,9 @@
   .paddingY {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+  .paddingYTop {
+    padding-top: 3rem;
   }
   
   @media (min-width: 768px) {
@@ -142,4 +178,6 @@
       display: none;
     }
   }
+
+  
   

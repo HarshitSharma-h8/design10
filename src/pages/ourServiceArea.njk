@@ -1,0 +1,92 @@
+---
+layout : 'base.njk'
+title : "Columbus Plumbing Services"
+
+heroImgSrc : "/assets/homehero.jpg"
+heroImgAlt : "HomePageHeroImg"
+eleventyComputed:
+  heroTitle: "{{ title }}"
+
+---
+
+{% include "heroSection.njk" %}
+
+<!-- service area location -->
+<section class=" mx-auto  paddingY bg-[var(--bgCream)]  px-4 md:px-14">
+        <div class="flex flex-wrap justify-center mx-auto  items-center gap-8">
+            {% for serviceArea in collections.serviceAreas %}
+                <a href="{{serviceArea.url}}"
+                    class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden w-full sm:max-w-[300px]">
+                    <!-- Team member image with overlay effect -->
+                    <div class="serviceArea_card relative">
+                        <img src="{{serviceArea.data.img}}" class="w-full h-[20rem] object-cover rounded-xl" alt={{serviceArea.data.title}}>
+                        <!-- Overlay with social icons -->
+                        <div
+                               class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
+                            <div class="">
+                                <p class="text-[var(--colorWhite)] text-2xl font-bold">{{serviceArea.data.title}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </a>
+            {% endfor %}
+        </div>
+</section>  
+
+<section class="mx-auto mycontainer paddingY">
+        <h3 class="text-[var(--primaryColor)] text-3xl font-bold">Plumbing Services: Dublin, Clintonville, & Downtown
+        </h3>
+        <h4 class="text-[var(--primaryColor)] text-2xl font-semibold mt-4">We Serve These Columbus Neighborhoods (and
+            More!)
+        </h4>
+        <p class="text-[var(--colorDark)] mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo similique
+            libero nobis? Soluta, voluptatibus explicabo eius nisi asperiores vitae, facilis necessitatibus, eum
+            voluptatem dicta id incidunt harum quam eos excepturi. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Aspernatur, id! Deleniti officiis minima accusantium tempore id ea. Distinctio, praesentium
+            reiciendis?</p>
+        <ul class="text-[var(--colorDark)] mt-2 list-disc marker:text-[var(--primaryColor)] serviceareali px-4">
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit maxime
+                nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus architecto id
+                consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit maxime
+                nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus architecto id
+                consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit maxime
+                nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus architecto id
+                consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit maxime
+                nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus architecto id
+                consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+        </ul>
+
+        <h4 class="text-[var(--primaryColor)] text-2xl font-semibold mt-4">Why Choose PlumbLab Plumbing?</h4>
+
+        <ul class="text-[var(--colorDark)] mt-2 list-disc marker:text-[var(--primaryColor)] serviceareali px-4">
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit maxime
+                nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus architecto id
+                consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem sint consequuntur ad vel
+                nesciunt vero beatae obcaecati maiores repudiandae?</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam nemo aliquid debitis sed!</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. Dolore enim soluta odit maxime
+                nesciunt sit quibusdam dicta corporis ipsa voluptas harum reprehenderit corrupti doloribus architecto id
+                consequatur, quam labore illo quasi facilis doloremque nulla repellendus sed adipisci! Omnis!</li>
+        </ul>
+
+        <h4 class="text-[var(--primaryColor)] text-2xl font-semibold mt-4">Beyond Service Areas</h4>
+        <p class="text-[var(--colorDark)] mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo similique
+            libero nobis? Soluta, voluptatibus explicabo eius nisi asperiores vitae, facilis necessitatibus, eum
+            voluptatem dicta id incidunt harum quam eos excepturi. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Aspernatur, id! Deleniti officiis minima accusantium tempore id ea. Distinctio, praesentium
+            reiciendis?</p>
+        <ul class="text-[var(--colorDark)] mt-2 list-disc marker:text-[var(--primaryColor)] serviceareali px-4">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde autem repudiandae placeat soluta, nihil
+                voluptatem.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, eius?</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto perferendis beatae repellat atque..</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, veritatis quos?</li>
+        </ul>
+
+
+</section>

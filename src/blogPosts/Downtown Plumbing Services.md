@@ -1,5 +1,5 @@
 ---
-title: "Clintonville Plumbing Services"
+title: "Dublin Plumbing Experiense"
 
 heroImgSrc: "/assets/homehero.jpg"
 heroImgAlt: "HomePageHeroImg"
@@ -13,7 +13,7 @@ img: "/assets/blog/blog1.jpg"
 
 ---
 
-## Clintonville Plumbing Services | AquaZap - Your Local Experts
+## Dublin Plumbing Experiense
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem nemo quod nostrum tempora corporis esse similique quas asperiores soluta exercitationem expedita necessitatibus vitae illum earum excepturi, sit, quidem ratione autem!
 

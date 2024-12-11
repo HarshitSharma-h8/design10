@@ -3,14 +3,12 @@ title: "Clintonville Plumbing Services"
 
 heroImgSrc: "/assets/homehero.jpg"
 heroImgAlt: "HomePageHeroImg"
-heroBTN: "hidden"
+
 eleventyComputed:
   heroTitle: "{{ title }}"
 
-date: "2023-08-02"
-author: "Jhon Dao"
-img: "/assets/blog/blog1.jpg"
 
+img: "/assets/blog/blog1.jpg"
 ---
 
 ## Clintonville Plumbing Services | AquaZap - Your Local Experts
@@ -28,6 +26,3 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo similique libero n
 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. 
 
 ### Get Your Clintonville Plumbing Fixed - Contact Us Today
-
-Feel free to share your favorite car in the list or suggest others!
-

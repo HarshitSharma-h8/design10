@@ -1,23 +1,22 @@
 ---
-title: "Clintonville Plumbing Services"
+title: "Downtown Plumbing Services"
 
 heroImgSrc: "/assets/homehero.jpg"
 heroImgAlt: "HomePageHeroImg"
-heroBTN: "hidden"
+
 eleventyComputed:
   heroTitle: "{{ title }}"
 
-date: "2023-08-02"
-author: "Jhon Dao"
+date: "2024-11-22"
+author: "Alice Johnson"
 img: "/assets/blog/blog1.jpg"
-
 ---
 
-## Clintonville Plumbing Services | AquaZap - Your Local Experts
+## Downtown Plumbing Services | AquaZap - Your Local Experts
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem nemo quod nostrum tempora corporis esse similique quas asperiores soluta exercitationem expedita necessitatibus vitae illum earum excepturi, sit, quidem ratione autem!
 
-### We Serve These Clintonville Neighborhoods (and More!)
+### We Serve These Downtown Neighborhoods (and More!)
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo similique libero nobis? Soluta, voluptatibus explicabo eius nisi asperiores vitae, facilis necessitatibus, eum voluptatem dicta id incidunt harum quam
 
@@ -27,7 +26,4 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo similique libero n
 
 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, est. 
 
-### Get Your Clintonville Plumbing Fixed - Contact Us Today
-
-Feel free to share your favorite car in the list or suggest others!
-
+### Get Your Downtown Plumbing Fixed - Contact Us TodaY

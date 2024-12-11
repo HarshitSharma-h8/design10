@@ -35,33 +35,30 @@
                                             class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                             Services</a>
                                     </li>
-                                    {% for service in services %}
-                                        <li><a href="/service/{{ service.name }}"
-                                            class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{ service.name }}</a>
+                                    {% for service in collections.services %}
+                                        <li><a href="{{service.url}}"
+                                            class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{ service.data.title }}</a>
                                         </li>
                                     {% endfor %}
                                 
                             </ul>
                         </li>
                         <li class="relative group">
-                            <button onclick="window.location.href='../servicearea/index.html';"
+                            <button onclick="window.location.href='/pages/ourServiceArea';"
                                 class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Service
                                 Areas <i class="fa-solid fa-chevron-down text-[var(--primaryColor)] text-[1rem] "></i>
                             </button>
                             <!-- Dropdown Menu -->
                             <ul
                                 class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
-                                <li><a href="./pages/Dublin/index.html"
-                                        class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Dublin</a>
+                                <li><a href="/pages/ourServiceArea"
+                                        class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our Service Areas</a>
                                 </li>
-                                <li><a href="./pages/Clintonville/index.html"
-                                        class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Clintonville</a>
-                                </li>
-                                <li><a href="./pages/Downtown/index.html"
-                                        class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Downtown</a>
-                                </li>
-
-
+                                {% for serviceArea in collections.serviceAreas %}
+                                    <li><a href="{{serviceArea.url}}"
+                                        class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{ serviceArea.data.title }}</a>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </li>
                         <!-- <a href="#"
@@ -77,14 +74,14 @@
                     <a href="tel:8669376739"
                         class="hidden xl:block hover:text-[var(--greenHover)] transition duration-300 ease-in-out text-[1.1rem]  text-[var(--green)] "><i
                             class="fa-solid fa-mobile-screen-button"></i> <span class="">866-937-6739</span></a>
-                    <a href="/pages/contact"
+                    <a href="/pages/contact#contactus"
                         class="hidden xl:block bg-[var(--green)] text-[var(--colorWhite)] py-2 px-4 rounded-md hover:bg-[var(--greenHover)] transition duration-300 ease-in-out text-[1.1rem] uppercase">Schedule
                         Service</a>
                     <a href="tel:8669376739" title="Call Us" class="xl:hidden block">
                         <i
                             class="fa-solid fa-mobile-screen-button text-[var(--green)] hover:text-[var(--greenHover)]  text-2xl"></i>
                     </a>
-                    <a href="/pages/contact" title="Schedule Service"
+                    <a href="/pages/contact#contactus" title="Schedule Service"
                         class="text-[var(--green)] hover:text-[var(--greenHover)] xl:hidden block text-2xl">
                         <i class="fa-solid fa-calendar-days"></i>
                     </a>
@@ -121,9 +118,9 @@
                                     class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                     Services</a>
                             </li>
-                            {% for service in services %}
-                                    <li><a href="/service/{{ service.name }}"
-                                        class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{ service.name }}</a>
+                            {% for service in collections.services %}
+                                    <li><a href="{{service.url}}"
+                                        class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{ service.data.title }}</a>
                                     </li>
                             {% endfor %}
                         </ul>
@@ -136,22 +133,16 @@
                                     id="dropMenu2"></i></a>
                             <!-- Dropdown Menu (Hidden by default) -->
                             <ul id="mobileDropdown2" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
-                                <li><a href="./pages/allservice/index.html"
+                                <li><a href="/pages/ourServiceArea"
                                         class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                         Service Areas</a>
                                 </li>
-                                <li><a href="./pages/Dublin/index.html"
-                                        class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Dublin,
-                                        Columbus</a>
-                                </li>
-                                <li><a href="./pages/Clintonville/index.html"
-                                        class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Clintonville,
-                                        Columbus</a>
-                                </li>
-                                <li><a href="./pages/Downtown/index.html"
-                                        class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Downtown,
-                                        Columbus</a>
-                                </li>
+                                {% for serviceArea in collections.serviceAreas %}
+                                    <li><a href="{{serviceArea.url}}"
+                                        class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{ serviceArea.data.title }}</a>
+                                    </li>
+                                {% endfor %}
+                                
 
 
                             </ul>

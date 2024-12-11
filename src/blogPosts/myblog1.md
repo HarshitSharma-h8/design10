@@ -90,17 +90,4 @@ Plumbing is a vital component of modern life, ensuring clean water supply and wa
 
 ![Plumbing Overview](/assets/blog/blog1.jpg)
 
-## Usage
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```

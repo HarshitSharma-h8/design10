@@ -1,5 +1,5 @@
 ---
-title: "Clintonville Plumbing Services"
+title: "Cleaning Matters"
 
 heroImgSrc: "/assets/homehero.jpg"
 heroImgAlt: "HomePageHeroImg"
@@ -7,8 +7,8 @@ heroBTN: "hidden"
 eleventyComputed:
   heroTitle: "{{ title }}"
 
-date: "2023-08-02"
-author: "Jhon Dao"
+date: "2022-11-20"
+author: "Harish Ikbaal"
 img: "/assets/blog/blog1.jpg"
 
 ---
