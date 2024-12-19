@@ -133,6 +133,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
   event.preventDefault(); // Prevent the default form submission
 
   const form = new FormData(this);
+  
   const toast = document.getElementById('toast');
 
   try {
@@ -140,6 +141,9 @@ document.getElementById('contact-form').addEventListener('submit', async functio
       method: 'POST',
       body: form,
     });
+
+    console.log(response);
+    
 
     const result = await response.json();
 
