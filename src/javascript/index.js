@@ -129,48 +129,6 @@ function toggleAccordion(index) {
 
 // contact form js
 
-document.getElementById('contact-form').addEventListener('submit', async function(event) {
-  event.preventDefault(); // Prevent the default form submission
 
-  const form = new FormData(this);
-  
-  const toast = document.getElementById('toast');
-
-  try {
-    const response = await fetch('/api/send-email', {
-      method: 'POST',
-      body: form,
-    });
-
-    console.log(response);
-    
-
-    const result = await response.json();
-
-    if (response.ok) {
-      toast.textContent = 'Email sent successfully!';
-      toast.classList.add('show');
-
-      // Reset the form after successful submission
-      document.getElementById('contact-form').reset();
-    } else {
-      toast.textContent = `Error: ${result.error}`;
-      toast.classList.add('show');
-    }
-
-    // Hide the toast after 4 seconds
-    setTimeout(() => {
-      toast.classList.remove('show');
-    }, 4000);
-  } catch (error) {
-    toast.textContent = 'An error occurred while sending the email. Please try again later.';
-    toast.classList.add('show');
-
-    // Hide the toast after 4 seconds
-    setTimeout(() => {
-      toast.classList.remove('show');
-    }, 4000);
-  }
-});
 
 
