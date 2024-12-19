@@ -13,6 +13,30 @@ img: "/assets/blog/blog1.jpg"
 
 ---
 
+# Table of Contents
+1. [Introduction](#introduction)
+2. [What is Markdown?](#what-is-markdown)
+3. [Basic Markdown Syntax](#basic-markdown-syntax)
+   - [Text Formatting](#text-formatting)
+   - [Headers](#headers)
+   - [Lists](#lists)
+4. [Advanced Markdown Features](#advanced-markdown-features)
+   - [Links and Images](#links-and-images)
+   - [Blockquotes](#blockquotes)
+   - [Code Blocks](
+
+> This is a blockquote.
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Row 1    | Data 1   | Data 2   |
+| Row 2    | Data 3   | Data 4   |
+
+<div style="color: red;">This text is red.</div>
+
+# introduction
+# what-is-markdown
+
 ## Clintonville Plumbing Services | AquaZap - Your Local Experts
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem nemo quod nostrum tempora corporis esse similique quas asperiores soluta exercitationem expedita necessitatibus vitae illum earum excepturi, sit, quidem ratione autem!
