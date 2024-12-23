@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   const { name, email, contact, service, message } = req.body;
 
   if (!name || !email || !contact || !service || !message || service=='Subject') {
-    return res.status(400).json({ message: 'All fields are required' });
+    return res.status(400).json({ message: 'All fields are required', statusCode : 400 });
   }
 
   try {
@@ -39,9 +39,9 @@ export default async function handler(req, res) {
     // Send the email
     await transporter.sendMail(mailOptions);
 
-    return res.status(200).json({ message: "Email sent successfully!" });
+    return res.status(200).json({ message: "Email sent successfully!", statusCode : 200 });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ error: `Failed to send email ${error}` });
+    return res.status(500).json({ error: `Failed to send email ${error}`, statusCode : 500 });
   }
 }
