@@ -17,7 +17,7 @@ heroBTN : "hidden"
         <h1 class="text-3xl font-bold text-[var(--darkBlue)] mb-6">Online Booking For Appointments.</h1>
 
         <!-- Form -->
-        <form class="space-y-4 " action="/api/send-email" method="POST" id="contact-form">
+        <form class="space-y-4 "  method="POST" id="contact-form">
 
             <!-- Full Name and Email -->
             <div class="flex flex-col md:flex-row md:space-x-4">
@@ -66,9 +66,33 @@ heroBTN : "hidden"
                 An Appointment
             </button>
 
+            <div id="responseMessage"></div>
+
         </form>
         <!-- Toast Container -->
         <div id="toast" class="toast"></div>
     </div>
 
 </section>
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value,
+        };
+
+        const response = await fetch('/api/send-email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        });
+
+        const result = await response.json();
+        const responseMessage = document.getElementById('responseMessage');
+        responseMessage.innerText = result.message || result.error;
+    });
+</script>

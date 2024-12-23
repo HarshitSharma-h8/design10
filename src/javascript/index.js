@@ -127,7 +127,6 @@ function toggleAccordion(index) {
 }
 
 
-// contact form js
 
 
 
