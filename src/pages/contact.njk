@@ -83,6 +83,8 @@ heroBTN : "hidden"
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
             message: document.getElementById('message').value,
+            service: document.getElementById('service').value,
+            contact: document.getElementById('contact').value,
         };
 
         const response = await fetch('/api/send-email', {
