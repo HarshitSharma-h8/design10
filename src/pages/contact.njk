@@ -121,6 +121,8 @@ heroBTN : "hidden"
             });
 
             const result = await response.json();
+            console.log(result);
+            
 
             // Show success or error message
             responseMessage.innerText = result.message || 'An error occurred.';
