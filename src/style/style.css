@@ -179,7 +179,7 @@ header li {
 /*  */
 
 /* contact form css for response */
-#responseMessage {
+/* #responseMessage {
   display: none;
   position: fixed;
   top: 10px;
@@ -189,7 +189,7 @@ header li {
   font-size: 14px;
   color: #fff;
   z-index: 1000;
-}
+} */
 
 #responseMessage.success {
   background-color: #4caf50; /* Green for success */
