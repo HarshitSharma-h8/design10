@@ -125,7 +125,13 @@ heroBTN : "hidden"
             // Show success or error message
             responseMessage.innerText = result.message || 'An error occurred.';
             responseMessage.style.display = 'block';
-            responseMessage.classList.add('success'); // Add success styling
+            
+            if(result.status != 200){
+                responseMessage.classList.add('error')
+            }else{
+                responseMessage.classList.add('success'); // Add success styling
+            }
+            
 
             if (response.ok) {
                 // Reset the form after a successful submission

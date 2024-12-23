@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   const { name, email, contact, service, message } = req.body;
 
   if (!name || !email || !contact || !service || !message || service=='Subject') {
-    return res.status(400).json({ error: 'All fields are required' });
+    return res.status(400).json({ message: 'All fields are required' });
   }
 
   try {
