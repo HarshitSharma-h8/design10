@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx eleventy --serve",
+    "start": "npx tailwindcss -i ./input.css -o ./_site/style/output.css --watch",
     "build": "eleventy"
   },
   "keywords": [],
@@ -11,10 +12,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "tailwindcss": "^3.4.17"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
+    "markdown-it": "^14.1.0",
     "nodemailer": "^6.9.16"
   }
 }

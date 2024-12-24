@@ -29,7 +29,7 @@ layout: "base.njk"
       class="lg:h-[60vh] w-full object-cover mt-4 rounded-md"
     />
 
-    {{ content | safe }}
+    {{ content | markdown | safe }}
   </div>
 </section>
 
@@ -38,3 +38,4 @@ layout: "base.njk"
 
 <!-- blog 3 card -->
 {% include "blog3card.njk" %}
+
