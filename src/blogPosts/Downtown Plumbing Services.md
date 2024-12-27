@@ -1,5 +1,5 @@
 ---
-title: "Dublin Plumbing Experiense"
+title: "AquaZap Blog | Dublin Plumbing Experiense"
 
 heroImgSrc: "/assets/homehero.jpg"
 heroImgAlt: "HomePageHeroImg"

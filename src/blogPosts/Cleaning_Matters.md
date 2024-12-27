@@ -1,5 +1,5 @@
 ---
-title: "Cleaning Matters"
+title: "AquaZap Blog | Cleaning Matters"
 
 heroImgSrc: "/assets/homehero.jpg"
 heroImgAlt: "HomePageHeroImg"

@@ -1,5 +1,5 @@
 ---
-title: "Understanding Plumbing: A Comprehensive Guide"
+title: "AquaZap Blog | Understanding Plumbing: A Comprehensive Guide"
 
 heroImgSrc: "/assets/homehero.jpg"
 heroImgAlt: "HomePageHeroImg"
