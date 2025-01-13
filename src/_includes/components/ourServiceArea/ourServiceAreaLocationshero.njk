@@ -1,0 +1,22 @@
+<!-- service area location -->
+<section class=" mx-auto  paddingY bg-[var(--bgCream)]  px-4 md:px-14">
+    <div class="flex flex-wrap justify-center mx-auto  items-center gap-8">
+        {% for serviceArea in collections.service_areas %}
+            <a href="{{serviceArea.url}}"
+                class="team-card bg-[var(--colorWhite)] rounded-xl overflow-hidden w-full sm:max-w-[300px]">
+                <!-- Team member image with overlay effect -->
+                <div class="serviceArea_card relative">
+                    <img src="{{serviceArea.data.img}}" class="w-full h-[20rem] object-cover rounded-xl" alt={{serviceArea.data.title}}>
+                    <!-- Overlay with social icons -->
+                    <div
+                           class="overlay absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-end p-8 opacity-0 transition-opacity duration-300 rounded-xl">
+                        <div class="">
+                            <p class="text-[var(--colorWhite)] text-2xl font-bold">{{serviceArea.data.title}}</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </a>
+        {% endfor %}
+    </div>
+</section>  

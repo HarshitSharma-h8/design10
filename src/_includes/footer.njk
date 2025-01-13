@@ -1,6 +1,6 @@
 <footer class="bg-[var(--darkBlue)]">
         <div class="mycontainer  flex items-center justify-between w-full py-4">
-            <a href="/pages/contact"
+            <a href="/contact#contactus"
                 class=" block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-2 px-4 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Schedule
                 Service
             </a>
@@ -24,7 +24,7 @@
         <div class=" grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 paddingY mycontainer ">
             <!-- Logo and Description -->
             <div>
-                <a href="./index.html" class="order-last lg:order-none flex items-center space-x-2">
+                <a href="/" class="order-last lg:order-none flex items-center space-x-2">
                     <div class="flex flex-col">
                         <span class="text-[var(--primaryColor)] font-bold text-3xl ">Aqua<span
                                 class="text-[var(--colorWhite)]">Zap.</span></span>
@@ -42,19 +42,19 @@
             <div>
                 <h3 class="text-xl font-semibold text-[var(--colorWhite)]">Quick Link</h3>
                 <ul class="mt-4 space-y-2 text-[var(--colorWhite)] transition duration-300 ease-in-out">
-                    <li><a href="/pages/about"
+                    <li><a href="/about"
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> About Us</a></li>
                     <!-- <li><a href="#" class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> Services</a></li> -->
-                    <li><a href="/pages/contact"
+                    <li><a href="/contact"
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> Contact</a></li>
-                    <li><a href="/pages/allblog"
+                    <li><a href="/blogs"
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> Our Blog</a>
                     </li>
-                    {% for serviceArea in collections.serviceAreas %}
+                    {% for serviceArea in collections.service_areas %}
                         <li><a href="{{ serviceArea.url }}"
                             class="hover:text-[var(--primaryColor)] transition duration-300 ease-in-out"><i
                                 class="fa-solid fa-angles-right"></i> {{serviceArea.data.title}}</a>
@@ -94,6 +94,6 @@
         </div>
         <div class="bg-[var(--colorDark2)] text-[var(--colorWhite)] text-center p-2 sm:p-4 lg:text-base px-4 md:px-10">
             <p>&#169; Copyright <span id="year"></span> | AquaZap. - Plumber Website Theme | All right reserved. | <a
-                    href="/pages/privacyPolicy" class="underline">Privacy Policy</a></p>
+                    href="/privacyPolicy" class="underline">Privacy Policy</a></p>
         </div>
   </footer>

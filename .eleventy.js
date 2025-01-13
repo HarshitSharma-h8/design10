@@ -14,18 +14,20 @@ export default function (eleventyConfig) {
     typographer: true,
   });
   eleventyConfig.setLibrary("md", markdownItInstance);
+
   eleventyConfig.addFilter("markdown", (content) => {
     return markdownItInstance.render(content || "");
   });
 
   eleventyConfig.setTemplateFormats(["md", "njk", "html"]);
+
+  eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addPassthroughCopy("src/style");
   eleventyConfig.addPassthroughCopy("src/javascript");
 
   eleventyConfig.addWatchTarget("./src/style/");
   eleventyConfig.addWatchTarget("./src/javascript/");
 
-  eleventyConfig.addPassthroughCopy("./src/assets");
 
   // dotenv
   eleventyConfig.addGlobalData("env", process.env);
@@ -33,6 +35,7 @@ export default function (eleventyConfig) {
   return {
     dir: {
       input: "src",
+      includes: '_includes',
       output: "_site",
     },
     templateFormats: ["md", "njk", "html"],

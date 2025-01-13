@@ -9,7 +9,7 @@
                 </a>
                 <div class="flex gap-8">
                     <!-- Logo and company name -->
-                    <a href="/index.html" class="order-last lg:order-none flex items-center space-x-2">
+                    <a href="/" class="order-last lg:order-none flex items-center space-x-2">
                         <div class="flex flex-col">
                             <span class="text-[var(--primaryColor)] font-bold lg:text-3xl text-[1.3rem]">Aqua<span
                                     class="text-[var(--darkBlue)]">Zap.</span></span>
@@ -20,10 +20,10 @@
                     <div class="hidden lg:flex  text-[var(--colorDark)] font-medium">
                         <a href="/"
                             class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
-                        <a href="/pages/about"
+                        <a href="/about"
                             class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
                         <li class="relative group ">
-                            <button onclick="window.location.href='/pages/ourservices';"
+                            <button onclick="window.location.href='/ourservices';"
                                 class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Services
                                 <i
                                     class="fa-solid fa-chevron-down text-[var(--primaryColor)] text-[1rem] "></i></button>
@@ -31,7 +31,7 @@
                             <ul
                                 class="absolute left-0 top-[2.1rem] w-[20rem]  hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
                                 
-                                    <li><a href="/pages/ourservices"
+                                    <li><a href="/ourservices"
                                             class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                             Services</a>
                                     </li>
@@ -44,17 +44,17 @@
                             </ul>
                         </li>
                         <li class="relative group">
-                            <button onclick="window.location.href='/pages/ourServiceArea';"
+                            <button onclick="window.location.href='/our-service-area';"
                                 class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Service
                                 Areas <i class="fa-solid fa-chevron-down text-[var(--primaryColor)] text-[1rem] "></i>
                             </button>
                             <!-- Dropdown Menu -->
                             <ul
                                 class="absolute left-0 top-[2.1rem] w-[20rem] hidden group-hover:block bg-[var(--colorWhite)] py-6 pb-5 rounded-md px-3  mt-2  z-10">
-                                <li><a href="/pages/ourServiceArea"
+                                <li><a href="/our-service-area"
                                         class=" block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our Service Areas</a>
                                 </li>
-                                {% for serviceArea in collections.serviceAreas %}
+                                {% for serviceArea in collections.service_areas %}
                                     <li><a href="{{serviceArea.url}}"
                                         class="block hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{ serviceArea.data.title }}</a>
                                     </li>
@@ -63,9 +63,9 @@
                         </li>
                         <!-- <a href="#"
                         class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
-                        <a href="/pages/allblog"
+                        <a href="/blogs"
                             class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blogs</a>
-                        <a href="/pages/contact"
+                        <a href="/contact"
                             class="hover:text-[var(--primaryColor)]  px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
                     </div>
                 </div>
@@ -74,14 +74,14 @@
                     <a href="tel:8669376739"
                         class="hidden xl:block hover:text-[var(--greenHover)] transition duration-300 ease-in-out text-[1.1rem]  text-[var(--green)] "><i
                             class="fa-solid fa-mobile-screen-button"></i> <span class="">866-937-6739</span></a>
-                    <a href="/pages/contact#contactus"
+                    <a href="/contact#contactus"
                         class="hidden xl:block bg-[var(--green)] text-[var(--colorWhite)] py-2 px-4 rounded-md hover:bg-[var(--greenHover)] transition duration-300 ease-in-out text-[1.1rem] uppercase">Schedule
                         Service</a>
                     <a href="tel:8669376739" title="Call Us" class="xl:hidden block">
                         <i
                             class="fa-solid fa-mobile-screen-button text-[var(--green)] hover:text-[var(--greenHover)]  text-2xl"></i>
                     </a>
-                    <a href="/pages/contact#contactus" title="Schedule Service"
+                    <a href="/contact#contactus" title="Schedule Service"
                         class="text-[var(--green)] hover:text-[var(--greenHover)] xl:hidden block text-2xl">
                         <i class="fa-solid fa-calendar-days"></i>
                     </a>
@@ -104,7 +104,7 @@
                     </div>
                     <a href="/"
                         class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Home</a>
-                    <a href="/pages/about"
+                    <a href="/about"
                         class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">About</a>
                     <a href="#" <li class="relative">
                         <a 
@@ -114,7 +114,7 @@
                                 id="dropMenu"></i></a>
                         <!-- Dropdown Menu (Hidden by default) -->
                         <ul id="mobileDropdown" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
-                            <li><a href="/pages/ourservices"
+                            <li><a href="/ourservices"
                                     class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                     Services</a>
                             </li>
@@ -133,11 +133,11 @@
                                     id="dropMenu2"></i></a>
                             <!-- Dropdown Menu (Hidden by default) -->
                             <ul id="mobileDropdown2" class="hidden pl-4 space-y-2 text-[var(--colorWhite)]">
-                                <li><a href="/pages/ourServiceArea"
+                                <li><a href="/our-service-area"
                                         class=" block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Our
                                         Service Areas</a>
                                 </li>
-                                {% for serviceArea in collections.serviceAreas %}
+                                {% for serviceArea in collections.service_areas %}
                                     <li><a href="{{serviceArea.url}}"
                                         class="block hover:bg-[var(--colorWhite)] hover:text-[var(--primaryColor)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">{{ serviceArea.data.title }}</a>
                                     </li>
@@ -149,12 +149,12 @@
                         </li>
                         <!-- <a href="#"
                             class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Shop</a> -->
-                        <a href="/pages/allblog"
+                        <a href="/blogs"
                             class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Blogs</a>
-                        <a href="/pages/contact"
+                        <a href="/contact"
                             class="hover:bg-[var(--colorWhite)] text-[var(--colorWhite)] hover:text-[var(--colorDark)] px-3 py-2 rounded-full transition duration-300 ease-in-out text-[1.1rem] font-semibold">Contact</a>
                         <div class="  space-y-3">
-                            <a href="/pages/contact"
+                            <a href="/contact"
                                 class=" block bg-[var(--green)] text-[var(--colorWhite)] hover:bg-[var(--greenHover)] py-3 px-5 rounded-md  transition duration-300 ease-in-out text-[1.1rem] uppercase">Schedule
                                 Service
                             </a>

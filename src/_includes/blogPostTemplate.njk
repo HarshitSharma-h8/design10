@@ -1,10 +1,9 @@
----
-layout: "base.njk"
+{% extends "base.njk" %}
 
----
+{% block content %}
 
-{# Hero section #}
-{% include "heroSection.njk" %} 
+{# Hero Section #}
+{% include "components/shared/heroSection.njk" %}
 
 {# Blog #}
 <section
@@ -34,8 +33,9 @@ layout: "base.njk"
 </section>
 
 {# Make a call section #} 
-{% include "makeaCallSection.njk" %}
+{% include "components/shared/makeaCallSection.njk" %}
 
 <!-- blog 3 card -->
-{% include "blog3card.njk" %}
+{% include "components/shared/blog3card.njk" %}
 
+{% endblock %}

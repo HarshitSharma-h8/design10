@@ -1,10 +1,11 @@
----
-layout: "base.njk"
+{% extends "base.njk" %}
 
----
+{% block content %}
+
 
 {# Hero section #}
-{% include "heroSection.njk" %} 
+{% include "components/shared/heroSection.njk" %} 
+
 
 {# Services #}
 <section
@@ -23,19 +24,12 @@ layout: "base.njk"
 </section>
 
 {# Make a call section #} 
-{% include "makeaCallSection.njk" %}
+{% include "components/shared/makeaCallSection.njk" %}
 
 <!-- blog 3 card -->
-{% include "blog3card.njk" %}
+{% include "components/shared/blog3card.njk" %}
 
 <!-- Map -->
-<div class="w-full max-w-6.5xl mx-auto">
+{% include "components/shared/map.njk" %}
 
-  <div class="overflow-hidden  shadow-lg">
-      <iframe class="areassection-map-frame rounded-lg"
-          src="{{src}}"
-          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-  </div>
-</div>
+{% endblock %}
